@@ -1,0 +1,21 @@
+* {
+	margin: 0;
+	padding: 0;
+	}
+
+html {
+	background-image: url('../images/shattered.png');
+	background-color: #EFEFEF;
+	}
+				
+body {
+	background-color: #2E2E2E;
+	border: 15px solid #2E2E2E;
+	width: 960px;	
+	margin: 50px auto;
+	}	
+
+img {
+	width: 960px;
+	padding-bottom: 0px;
+	}
