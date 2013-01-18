@@ -38,7 +38,12 @@
 
 	<div class="container">
 		<header>
+		
+			<div class="nine columns">
 			<h1>Art of Liz</h1>
+			</div>
+			
+			<div class="seven columns">
 			<nav>
 				<ul>
 					<li><a href="index.html">Home</a></li>
@@ -49,6 +54,8 @@
 					<li><a href="contact.html" class="active">Contact</a></li>
 				</ul>
 			</nav>
+			</div>
+			
 		</header>
 		
 		<form method="post" action="#">
@@ -56,30 +63,41 @@
 			<p>Fill out the information below for your free quote. *Required</p>
 			
 			<fieldset>
+				<div class="four columns">
 				<label for="name">*Name</label>
 				<input type="text" name="name" id="name" required="required" />
+				</div>
 				
+				<div class="four columns">
 				<fieldset>
 					<label for="email">*Email</label>
 					<input type="email" name="email" id="email" required="required" placeholder="youremail@gmail.com" />
-					<input type="checkbox" name="emailPref" id="emailPref" value="Email Preferred" /> <label for="emailPref">Preferred</label>
 				</fieldset>
+				</div>
 				
+				<div class="eight columns">
 				<fieldset>
 					<label for="phone">Phone</label>
 					<input type="tel" name="phone" id="phone" placeholder="(XXX) XXX-XXXX" />
-					<input type="checkbox" name="phonePref" id="phonePref" value="Phone Preferred" /> <label for="phonePref">Preferred</label>
 				</fieldset>
+				</div>
 				
+				<div class="four columns">
 				<label for="website">Website</label>
 				<input type="url" name="website" id="website" placeholder="http://www.yourwebsite.com"/>
+				</div>
 				
+				<div class="four columns">
 				<label for="budget">*Budget</label>
 				<input type="text" name="budget" id="budget" required="required" placeholder="$100 - $500" />
+				</div>
 				
+				<div class="eight columns">
 				<label for="deadline">*Deadline</label>
 				<input type="date" name="deadline" id="deadline" required="required" />
-				
+				</div>
+								
+				<div class="four columns">
 				<label for="industry">*Industry</label>
 				<select name="industry" id="industry" required="required">
 					<option value="">Please Select One</option>
@@ -88,7 +106,9 @@
 					<option value="Non-Profit">Non-Profit</option>
 					<option value="Other">Other</option>
 				</select>
+				</div>
 				
+				<div class="four columns">
 				<fieldset>
 					<legend>*Services:</legend>
 					
@@ -108,33 +128,50 @@
 					<input type="checkbox" name="other" id="other" value="Other" />
 					<span>Other (Please Specify)</span></label>					
 				</fieldset>
+				</div>
 				
+				<div class="eight columns">
 				<label for="message">*Message</label>
 				<textarea name="message" id="message" required="required" placeholder="Message..."></textarea>
+				</div>
 				
+				<div class="eight columns"></div>
+				<div class="eight columns">
 				<button type="submit">Get Your Free Quote</button>
+				</div>
 			</fieldset>
 		</form>
 		
 		<section class="infoBar">
+			<div class="four columns">
 			<article class="moduleItem">
 				<h5>Get in Touch</h5>
 			</article>
+			</div>
+			
+			<div class="four columns">
 			<article class="moduleItem">
 				<h3>Mailing Address</h3>
 				<p>877 Oak Reserve Lane</p>
 				<p>Winter Park, FL 32792</p>
 			</article>
+			</div>
+			
+			<div class="four columns">
 			<article class="moduleItem">
 				<h3>Contact Information</h3>
 				<p>P: <a href="tel:+13525527216">+1 (352) 552-7216</a></p>
 				<p>E: <a href="#">thatsme@artofliz.com</a></p>
 			</article>
+			</div>
+			
+			<div class="four columns">
 			<article class="moduleItem">
 				<h3>Connect</h3>
 				<p>Facebook: <a href="#">Lindsay Roberts</a></p>
 				<p>Skype: LRRoberts0122</p>
 			</article>
+			</div>
 		</section>
 		
 		<footer class="sixteen columns">
