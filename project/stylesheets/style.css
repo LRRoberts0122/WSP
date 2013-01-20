@@ -1,15 +1,12 @@
 /* GLOBAL CSS
 ================================================== */
 body {
-	background-image: url('../images/bg_pattern.jpg');
-	overflow-x: hidden;
-	/*background-image: url('../images/2_About.jpg');
-	background-position: center top;
-	background-repeat: no-repeat;*/
+	background: /*url('../images/5_Resources.jpg') center top no-repeat,*/ url('../images/bg_pattern.jpg');
+	/*overflow-x: hidden;*/
 }
 
 .container {
-	position: relative;
+	/*position: relative;*/
 	margin: 0 auto;
 	padding: 0;
 }
@@ -52,10 +49,14 @@ nav, h2, h3 {
 
 h3 {
 	color: #007CAF;
-	margin: 0;
+	margin: 0 0 5px 0;
 	padding: 0;
 	font-weight: 400;
 	font-size: 14pt;
+}
+
+p {
+	margin: 0;
 }
 
 /* ===== Navigation ===== */
@@ -77,7 +78,7 @@ nav ul {
 
 nav ul li {
 	float: left;
-	margin-top: 50px;
+	margin-top: 35px;
 }
 
 nav ul li a {
@@ -126,24 +127,24 @@ nav ul li a.active, nav ul li a.active:before, nav ul li a.active:after {
 /* !Important - The header works in Firefox, not in Chrome.
 overflow-x: hidden; isn't functioning properly. */
 
-h2 {
+/*h2 {
 	display: block;
 	position: absolute;
+	color: #005d82;
 	left: 40%;
-	top: 10%;
+	top: 0;
 	z-index: -1;
 	font-size: 160pt;
-	color: rgba(0, 123, 174, .03);
-}
+	color: rgba(0, 93, 130, .02);
+	margin: 0;
+	padding: 0;
+}*/
 
 /* ===== Info Bar ===== */
 .infoBar {
-	background-color: #000;
+	background-color: rgba(0,0,0,1);
 	width: 100%;
-}
-
-.moduleItem {
-	padding: 10px 0 55px;
+	padding: 22px 0 74px 0;
 }
 
 .moduleItem h3 {
@@ -155,13 +156,14 @@ h2 {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 16pt;
-	margin-bottom: 3px;
+	margin: 0 0 6px 0;
 }
 
 /* ===== Footer ===== */
 footer {
 	background-color: #007CAF;
 	text-align: center;
+	padding: 4px;
 }
 
 footer p, footer a, footer a:visited, footer a:hover, footer a:active {
@@ -193,19 +195,23 @@ footer p {
 }
 
 #CTAbutton a:hover {
-	background-position: 0px -92px;
+	background-position: 0px -91px;
 }
 
 #CTA h3 {
 	font-size: 26pt;
-	margin-bottom: 16px;	
 }
 
 #CTA p {
 	font-size: 14pt;
 	font-weight: 200;
 	color: #000;
-	line-height: 1.5;
+	line-height: 1.6;
+	margin: 0;
+}
+
+#CTA img {
+	margin: 10px 0 2px;
 }
 
 #CTA strong {
@@ -222,11 +228,12 @@ footer p {
 }
 
 #aboutContent {
-	margin-bottom: 22px;
+	margin-bottom: 18px;
+	margin-top: 4px;
 }
 
 #about #aboutContent ul {
-	margin: 0 0 0 40px;
+	margin: 10px 0 0 40px;
 	padding: 0;
 }
 
@@ -240,5 +247,258 @@ footer p {
 }
 
 #aboutWhy {
+	float: right;
+}
+
+.reference {
+	font-weight: 200;
+	font-size: 13px;
+}
+
+#logo1 {
+	margin-top: 15px;
+}
+
+#logo2 {
+	margin-top: 25px;
+}
+
+.comments {
+	padding-top: 30px;
+}
+
+#about .infoBar {
+	padding-bottom: 51px;
+}
+
+/* GALLERY 
+================================================== */
+#portfolioImage {
+	position: relative;
+}
+
+#portfolioImage img {
+	position: absolute;
+	left: 382px;
+	top: 107px;
+	z-index: -1;
+}
+
+#portfolioContent {
+	margin-top: 4px;
+	margin-bottom: 1px;
+}
+
+#portfolio .infoBar {
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+
+#portfolio .infoBar img {
+	position: absolute;
+	top: 0;
+}
+
+#portfolio .infoBar h3 {
+	padding: 22px 0 0 0;
+}
+
+#portfolio #portfolioContent p {
+	margin: 0 0 32px 0;
+}
+
+#portfolio .infoBar .moduleItem {
+	padding: 0 0 74px 0;
+}
+
+#case {
+	background: url('../images/portfolio_01.jpg') no-repeat;
+	}
+
+#web {
+	background: url('../images/portfolio_02.jpg') no-repeat;
+}
+
+#graphic {
+	background: url('../images/portfolio_03.jpg') no-repeat;
+}
+
+#art {
+	background: url('../images/portfolio_04.jpg') no-repeat;
+}
+
+/* BLOG 
+================================================== */
+.blogPost {
+	background: #EDEDED;
+	border: 10px solid #FFF;
+	padding: 8px;
+	line-height: 20px;
+	box-shadow: 0px 0px 4px rgba(0,0,0,0.5);
+}
+
+#blog h3 {
+	margin: 0;
+}
+
+.date {
+	font-size: 10pt;
+	margin: 0;
+	padding: 0;
+}
+
+#blog select {
+	width: 200px;
+}
+
+.blogPost {
+	margin: 10px 0 17px 0;
+}
+
+#blog input[type="search"] {
+   height: 20px;
+   padding: 40px 160px;
+   background:#555;
+}
+
+#blog input[type="search"] {
+    background: url('../images/search.png') no-repeat 150px 8px, #141414; /* Old browsers */
+	background: url('../images/search.png') no-repeat 150px 8px, -moz-linear-gradient(top, #222 16%, #141414 66%); /* FF3.6+ */
+	background: url('../images/search.png') no-repeat 150px 8px, -webkit-gradient(linear, left top, left bottom, color-stop(16%,#222), color-stop(66%,#141414)); /* Chrome,Safari4+ */
+	background: url('../images/search.png') no-repeat 150px 8px, -webkit-linear-gradient(top, #222 16%,#141414 66%); /* Chrome10+,Safari5.1+ */
+	background: url('../images/search.png') no-repeat 150px 8px, -o-linear-gradient(top, #222 16%,#141414 66%); /* Opera 11.10+ */
+	background: url('../images/search.png') no-repeat 150px 8px, -ms-linear-gradient(top, #222 16%,#141414 66%); /* IE10+ */
+	background: url('../images/search.png') no-repeat 150px 8px, linear-gradient(to bottom, #222 16%,#141414 66%); /* W3C */
+	border:1px solid #222;
+    color: #6B6B6B;
+    font-size: 10pt;
+    font-weight: 600;
+    width: 150px;
+    padding: 6px 15px 6px 15px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    -webkit-transition: all 0.7s ease 0s;
+    -moz-transition: all 0.7s ease 0s;
+    -o-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+    }
+
+#blog input[type="search"]:focus {
+    width: 200px;
+    color: #DEDED3;
+    background: url('../images/search.png') no-repeat 200px 8px, #141414; /* Old browsers */
+	background: url('../images/search.png') no-repeat 200px 8px, -moz-linear-gradient(top, #222 16%, #141414 66%); /* FF3.6+ */
+	background: url('../images/search.png') no-repeat 200px 8px, -webkit-gradient(linear, left top, left bottom, color-stop(16%,#222), color-stop(66%,#141414)); /* Chrome,Safari4+ */
+	background: url('../images/search.png') no-repeat 200px 8px, -webkit-linear-gradient(top, #222 16%,#141414 66%); /* Chrome10+,Safari5.1+ */
+	background: url('../images/search.png') no-repeat 200px 8px, -o-linear-gradient(top, #222 16%,#141414 66%); /* Opera 11.10+ */
+	background: url('../images/search.png') no-repeat 200px 8px, -ms-linear-gradient(top, #222 16%,#141414 66%); /* IE10+ */
+	background: url('../images/search.png') no-repeat 200px 8px, linear-gradient(to bottom, #222 16%,#141414 66%); /* W3C */
+    }
+    
+#blog #searchBox {
+	position: relative;
+}
+
+#blog button[type="submit"] {
+	background: none;
+	width: 20px;
+	height: 20px;
+	border: none;
+	position: absolute;
+	top: 8px;
+	left: 200px;
+}
+
+#blog .infoBar {
+	background-color: rgba(0,0,0,1);
+	width: 100%;
+	padding: 22px 0 74px 0;
+}
+
+#blog .moduleItem h3 {
+	margin-bottom: 5px;
+}
+
+#blog .moduleItem p {
+	color: #deded3;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 16pt;
+	margin: 0 0 6px 0;
+}
+
+/* RESOURCES 
+================================================== */
+#resources .mainContent {
+	margin-top: 4px;
+	margin-bottom: 79px;
+}
+
+#resources .infoBar {
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+
+#resources .infoBar img {
+	position: absolute;
+	top: 0;
+}
+
+#resources .infoBar h3 {
+	padding: 23px 0 0 0;
+}
+
+#resources #portfolioContent p {
+	margin: 0 0 32px 0;
+}
+
+#resources .infoBar .moduleItem {
+	padding: 0 0 74px 0;
+}
+
+#resources #wallpaper {
+	background: url('../images/portfolio_01.jpg') no-repeat;
+	}
+
+#resources #icons {
+	background: url('../images/portfolio_02.jpg') no-repeat;
+}
+
+#resources #badges {
+	background: url('../images/portfolio_03.jpg') no-repeat;
+}
+
+#resources #emblem {
+	background: url('../images/portfolio_04.jpg') no-repeat;
+}
+
+/* CONTACT 
+================================================== */
+#contact fieldset {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+#contact label, #contact legend {
+	text-transform: uppercase;
+	font-size: 10pt;
+	font-weight: 600;
+	margin-right: 10px;
+	color: #007CAF;
+}
+
+#contact input, #contact textarea, #contact select {
+	float: right;
+}
+
+#contact label span {
 	float: right;
 }

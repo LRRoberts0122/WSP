@@ -1,0 +1,68 @@
+/* Include me in your html file */
+/* It is recommended that you only change the colors for the following properties */
+
+
+/* Background of the select bar (not expanded) */
+/* The origional theme uses a gradient. */
+
+.msb {
+	border:1px solid #bbb;
+	background: #141414; /* Old browsers */
+	background: -moz-linear-gradient(top, #222 16%, #141414 66%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(16%,#222), color-stop(66%,#141414)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #222 16%,#141414 66%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #222 16%,#141414 66%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #222 16%,#141414 66%); /* IE10+ */
+	background: linear-gradient(to bottom, #222 16%,#141414 66%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222', endColorstr='#141414',GradientType=0 ); /* IE6-9 */
+}
+/* Background of the list items */
+.msb > .msb-items {
+	 background-color: #141414;
+}
+
+/* Font color for the selection bars */
+.msb p {
+	color:#6B6B6B;
+	padding:4px 0px 2px 6px;
+	font-size:10pt;
+	font-weight: 600;
+	text-align:left;
+}
+
+/* Background of the drop-down button */
+/* The origional theme uses a gradient. */
+.msb > .msb-box {
+	background: #141414; /* Old browsers */
+	background: -moz-linear-gradient(top, #222 16%, #141414 66%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(16%,#222), color-stop(66%,#141414)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #222 16%,#141414 66%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #222 16%,#141414 66%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #222 16%,#141414 66%); /* IE10+ */
+	background: linear-gradient(to bottom, #222 16%,#141414 66%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222', endColorstr='#141414',GradientType=0 ); /* IE6-9 */
+}
+
+/* Color for items when hovered/clicked */
+.msb-items > li > p:hover,.msb-items > li > p:active{
+	background-color: #CD7994;
+	color: #000;
+}
+
+/* Change the arrow color */
+.msb > .msb-box > div {
+	border-top: 5px solid #CD7994;
+}
+
+
+/* Border colors */
+/* It is suggested that you use the same color for the follow borders, and dont change the border width */
+.msb, .msb-items{
+	border:1px solid #222;
+}
+.msb-current{
+	border-right:1px solid #222;
+}
+.msb-items > li:not(:first-child)>p{
+  border-top:1px solid #222;
+}

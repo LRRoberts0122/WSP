@@ -72,41 +72,46 @@
 			</div>
 			
 			<fieldset class="sixteen columns">
-				<div class="four columns alpha">
+				<div class="row">
+				<div class="five columns alpha" id="name0">
 				<label for="name">*Name</label>
 				<input type="text" name="name" id="name" required="required" />
 				</div>
 				
-				<div class="four columns">
+				<div class="five columns" id="email0">
 				<fieldset>
 					<label for="email">*Email</label>
 					<input type="email" name="email" id="email" required="required" placeholder="youremail@gmail.com" />
 				</fieldset>
 				</div>
 				
-				<div class="eight columns omega">
+				<div class="six columns omega" id="phone0">
 				<fieldset>
 					<label for="phone">Phone</label>
 					<input type="tel" name="phone" id="phone" placeholder="(XXX) XXX-XXXX" />
 				</fieldset>
 				</div>
+				</div> <!-- row -->
 				
-				<div class="four columns alpha">
+				<div class="row">
+				<div class="five columns alpha" id="website0">
 				<label for="website">Website</label>
 				<input type="url" name="website" id="website" placeholder="http://www.yourwebsite.com"/>
 				</div>
 				
-				<div class="four columns">
+				<div class="five columns" id="budget0">
 				<label for="budget">*Budget</label>
 				<input type="text" name="budget" id="budget" required="required" placeholder="$100 - $500" />
 				</div>
 				
-				<div class="eight columns omega">
+				<div class="six columns omega" id="deadline0">
 				<label for="deadline">*Deadline</label>
 				<input type="date" name="deadline" id="deadline" required="required" />
 				</div>
+				</div> <!-- row -->
 								
-				<div class="four columns alpha">
+				<div class="row">
+				<div class="five columns alpha" id="industry0">
 				<label for="industry">*Industry</label>
 				<select name="industry" id="industry" required="required">
 					<option value="">Please Select One</option>
@@ -117,9 +122,9 @@
 				</select>
 				</div>
 				
-				<div class="four columns">
+				<div class="five columns" id="services0">
 				<fieldset>
-					<legend>*Services:</legend>
+					<legend>*Services</legend>
 					
 					<label for="webDesign">
 					<input type="checkbox" name="webDesign" id="webDesign" value="Website Design / Redesign" />
@@ -139,22 +144,32 @@
 				</fieldset>
 				</div>
 				
-				<div class="eight columns omega">
+				<div class="six columns omega" id="messages0">
 				<label for="message">*Message</label>
 				<textarea name="message" id="message" required="required" placeholder="Message..."></textarea>
 				</div>
+				</div> <!-- row -->
 				
+				<div class="row">
 				<div class="eight columns alpha"></div>
 				<div class="eight columns omega">
 				<button type="submit">Get Your Free Quote</button>
 				</div>
+				</div> <!-- row -->
 			</fieldset>
 		</form>
 		
-		<section class="infoBar">
+	</div> <!-- container -->
+	
+	<!-- INFO BAR
+	==================== -->
+	<div class="infoBar">
+		<div class="container">
+		
+		<section>
 			<div class="four columns">
 			<article class="moduleItem">
-				<h5>Get in Touch</h5>
+				<p>Get in Touch</p>
 			</article>
 			</div>
 			
@@ -183,12 +198,15 @@
 			</div>
 		</section>
 		
-		<footer class="sixteen columns">
-			<p>&copy;2013 Lindsay Roberts <a href="#">http://www.artofliz.com</a> All Rights Reserved.</p>
-		</footer>
-
-	</div><!-- container -->
-
+		</div> <!--container -->
+	</div> <!-- infoBar -->
+	
+	<!-- FOOTER
+	==================== -->
+	<footer>
+		<p>&copy;2013 Lindsay Roberts <a href="#">http://www.artofliz.com</a> All Rights Reserved.</p>
+	</footer>
+	
 
 <!-- End Document
 ================================================== -->

@@ -23,6 +23,10 @@
 	<link rel="stylesheet" href="stylesheets/layout.css" type="text/css">
 	<link rel="stylesheet" href="stylesheets/style.css" type="text/css">
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600,700,900" type="text/css">
+	<link rel='stylesheet' href='stylesheets/msb.css'/>
+	<link rel='stylesheet' href='stylesheets/msb-theme-black.css'/>
+	<script src='javascript/jquery-1.8.1.min.js'></script>
+	<script src='javascript/msb.min.js'></script>
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -62,26 +66,25 @@
 		<!-- PAGE TITLE
 		==================== -->
 		<!-- <div class="title">
-			<h2>&lt;&#47;HOME&gt;</h2>
+			<h2>&lt;&#47;BLOG&gt;</h2>
 		</div> -->
 		
 		<div class="sixteen columns">
 		</div>
 		
-		<section>
+		<section id="blogContent">
 		
-			<div class="four columns">
-			<article>
+			<div class="four columns grades">
+			<article class="blogPost">
 				<h3>Grades: History of Vi...</h3>
 				<p><span class="date">December 20, 2012</span></p>
 				<p>Okay, so I'm pretty happy with the grades. I wish I'd studied for the Final, or else I could have gotten a 100%. I only missed two questions, but I was preoccupied with a death in the family, unfortunately. I still got an A+, so what does...</p>
 				<p><a href="#">Grades: History of Visual Communications</a></p>
-				<img src="images/award.png" alt="Award ribbon that means I got an A in this class!" />
 			</article>
 			</div>
 			
 			<div class="four columns">
-			<article>
+			<article class="blogPost">
 				<h3>New Wallpaper</h3>
 				<p><span class="date">December 17, 2012</span></p>
 				<p>Hey everyone. It's officially break, and until Christmas I've been super bored. I ended up doing this Wallpaper. It's not very Christmasy, so I'm going to do another one, soon. I was actually recording this, but my computer ended up crashing half-way through, so I lost my...</p>
@@ -90,16 +93,16 @@
 			</div>
 			
 			<div class="four columns">
-			<article>
+			<article class="blogPost">
 				<h3>Month 11: History of...</h3>
 				<p><span class="date">December 13, 2012</span></p>
-				<p>For the final project, we were supposed to create a poster-esque something that was one of the art styles we'd learned about in class. The teacher allowed me to do something a bit more traditional, since we're rarely ever able to do some...</p>
+				<p>For the final project, we were supposed to create a poster-esque something that was one of the art styles we'd learned about in class. The teacher allowed me to do something a bit more traditional, since we're rarely ever able to do...</p>
 				<p><a href="#">Month 11: History of Visual Communications</a></p>
 			</article>
 			</div>
 			
 			<div class="four columns">
-			<article>
+			<article class="blogPost">
 				<h3>Month 11: History of...</h3>
 				<p><span class="date">December 13, 2012</span></p>
 				<p>In this particular lab, I believe the goal was trying to get students to open up. What I really enjoy about this class is that you really do have creative freedom, for the most part. The exercise, I believe, helped to get students to understand...</p>
@@ -120,22 +123,32 @@
 			<div class="four columns">
 			<article class="moduleItem">
 				<h3>Categories</h3>
-				<form>
-					<select>
-						<option>View All</option>
-						<option>History of Visual Communications</option>
-						<option>Designing for Web Standards</option>
-						<option>Intellectual Property and Law</option>
-						<option>Web Design Fundamentals</option>
-						<option>Advanced Design Tools &amp; Interfaces</option>
-						<option>Web Interface &amp; Usability</option>
-						<option>Principles of Production Process</option>
-						<option>Networks &amp; Server Structures</option>
-						<option>Art History</option>
-						<option>Advanced Computer Graphics</option>
-						<option>Designing Computer Graphics</option>
-					</select>
-				</form>
+				<div id="blogCats"></div>
+				<script>
+			msb.build({
+				id:'blogCats',
+				width:200,
+				height: 30,
+				scrollHeight: 100,
+				defaultValue:'View All',
+				items:[
+					{text:'View All'},
+					{text:'History of Visual Communications',value:'HVC'},
+					{text:'Designing for Web Standards',value:'DWS'},
+					{text:'Intellectual Property and Law',value:'IPL'},
+					{text:'Web Design Fundamentals',value:'WDF'},
+					{text:'Advanced Design Tools & Interfaces',value:'ADT'},
+					{text:'Web Interface & Usability',value:'WIU'},
+					{text:'Principles of Production Process',value:'PPP'},
+					{text:'Networks & Server Structures',value:'NSS'},
+					{text:'Art History',value:'ART'},
+					{text:'Advanced Computer Graphics',value:'ACG'},
+					{text:'Designing Computer Graphics',value:'DCG'}
+
+				],
+				scrollHeight: 75
+			});
+		</script>
 			</article>
 			</div>
 			
@@ -158,9 +171,9 @@
 			<div class="four columns">
 			<article class="moduleItem">
 				<h3>Need something else?</h3>
-				<form method="get" action="#">
+				<form id="searchBox" method="get" action="#">
 					<input type="search" placeholder="Search the Blog..." />
-					<button type="submit">Go</button>
+					<button type="submit"></button>
 				</form>
 			</article>
 			</div>
