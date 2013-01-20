@@ -18,18 +18,19 @@
 
 	<!-- CSS
   ================================================== -->
-	<link rel="stylesheet" href="stylesheets/base.css">
-	<link rel="stylesheet" href="stylesheets/skeleton.css">
-	<link rel="stylesheet" href="stylesheets/layout.css">
-	<link rel="stylesheet" href="stylesheets/style.css">
-
+	<link rel="stylesheet" href="stylesheets/base.css" type="text/css">
+	<link rel="stylesheet" href="stylesheets/skeleton.css" type="text/css">
+	<link rel="stylesheet" href="stylesheets/layout.css" type="text/css">
+	<link rel="stylesheet" href="stylesheets/style.css" type="text/css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600,700,900" type="text/css">
+	
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 
 
 </head>
-<body>
+<body id="about">
 
 
 
@@ -37,13 +38,14 @@
 	================================================== -->
 
 	<div class="container">
+		<!-- HEADER
+		==================== -->
 		<header>
-		
-			<div class="nine columns">
+			<div class="five columns">
 			<h1>Art of Liz</h1>
 			</div>
 			
-			<div class="seven columns">
+			<div class="eleven columns">
 			<nav>
 				<ul>
 					<li><a href="index.html">Home</a></li>
@@ -55,22 +57,24 @@
 				</ul>
 			</nav>
 			</div>
-			
 		</header>
 		
-		<section>
+		<!-- PAGE TITLE
+		==================== -->
+		<!-- <div class="title">
+			<h2>&lt;&#47;ABOUT&gt;</h2>
+		</div> -->
 		
-			<div class="eight columns">
-			<article>
+		<!-- CONTENT
+		==================== -->
+		<section id="aboutContent" class="sixteen columns">
+			<article class="seven columns alpha">
 				<h3>Who am I?</h3>
-				<p>I'm an artist. Whether it be traditional, digital, or professional, I love every pixel and drop of paint because it creates something unique about what I do. My name is Lindsay Roberts. I was born and raised in Leesburg, FL, and have been living here ever since.</p>
-				<p>I've always had a thing for art. Call it talent or a calling, but it's been in my life since I can remember. That is what brought me to Full Sail, and has helped me realize my dream for Web Design and Development.</p>
-				<img src="images/portrait.png" alt="A picture of me" />
+				<p>I'm an artist. Whether it be traditional, digital, or professional, I love every pixel and drop of paint because it creates something unique about what I do. My name is Lindsay Roberts. I was born and raised in Leesburg, FL, <img src="images/portrait.png" alt="A picture of me" id="myPicture" /> and have been living here ever since.</p>
+				<p>I've always had a thing for art. Call it talent, or destiny, but it's been in my life since I can remember. That is what brought me to Full Sail, and has helped me realize my dream for Web Design and Development.</p>
 			</article>
-			</div>
-			
-			<div class="eight columns">
-			<article>
+						
+			<article id="aboutWhy" class="eight columns omega">
 				<h3>Why choose me?</h3>
 				<p>My designs are bold, I have extensive experience in UX design, and I have a process. It starts with a sketch and then I progress to wireframes and Photoshop compositions before building your website. Why do I do this? Because it ensured that your website comes out looking beautiful.</p>
 				<ul>
@@ -79,44 +83,50 @@
 					<li><p><strong>Process:</strong> The preproduction process is essential. Without it, your website, logo, or graphic may not represent what you stand for.</p></li>
 				</ul>
 			</article>
-			</div>
-			
 		</section>
-		
-		<section>
-			<div class="sixteen columns">
-			<h3>Accolades</h3>
-			</div>
-			
-			<article>
-				<div class="four columns">
-				<img src="images/gamereviewtv.png" alt="GameReviewTV Logo" />
-				</div>
-				
-				<div class="five columns">
-				<p>"The themes were exactly what I was looking for. I highly recommend Lindsay for your project."</p>
-				<p>&mdash;Gary Leavens <a href="#">www.gamereview.tv</a></p>
-				</div>
-			</article>
-			
-			<article>
-				<div class="two columns">
-				<img src="images/rhinocrunch.png" alt="RhinoCrunch Logo" />
-				</div>
-				
-				<div class="five columns">
-				<p>"Amazing artist. I will definitely be using her again."</p>
-				<p>&mdash;Aaron Warshaw <a href="#">www.rhinocrunch.com</a></p>
-				</div>
-			</article>
-		</section>
-		
-		<footer class="sixteen columns">
-			<p>&copy;2013 Lindsay Roberts <a href="#">http://www.artofliz.com</a> All Rights Reserved.</p>
-		</footer>
-
 	</div><!-- container -->
 
+		
+<!-- INFO BAR
+	==================== -->
+	<div class="infoBar">
+		<div class="container">
+		
+		<section>
+			<div class="four columns">
+			<article class="moduleItem">
+				<h3>Accolades</h3>
+				<img src="images/gamereviewtv.png" alt="GameReviewTV Logo" />
+			</article>
+			</div>
+			
+			<div class="five columns">
+			<article class="moduleItem">
+				<p>"The themes were exactly what I was looking for. I highly recommend Lindsay for your project."</p>
+				<p>&mdash;Gary Leavens <a href="#">www.gamereview.tv</a></p>
+			</article>
+			</div>
+			
+			<div class="two columns">
+			<article class="moduleItem">
+				<img src="images/rhinocrunch.png" alt="RhinoCrunch Logo" />
+			</article>
+			</div>
+			
+			<div class="five columns">
+			<article class="moduleItem">
+				<p>"Amazing artist. I will definitely be using her again."</p>
+				<p>&mdash;Aaron Warshaw <a href="#">www.rhinocrunch.com</a></p>
+			</article>
+			</div>
+		</section>
+		
+		</div> <!--container -->
+	</div> <!-- infoBar -->
+		
+	<footer class="sixteen columns">
+		<p>&copy;2013 Lindsay Roberts <a href="#">http://www.artofliz.com</a> All Rights Reserved.</p>
+	</footer>
 
 <!-- End Document
 ================================================== -->

@@ -18,10 +18,11 @@
 
 	<!-- CSS
   ================================================== -->
-	<link rel="stylesheet" href="stylesheets/base.css">
-	<link rel="stylesheet" href="stylesheets/skeleton.css">
-	<link rel="stylesheet" href="stylesheets/layout.css">
-	<link rel="stylesheet" href="stylesheets/style.css">
+	<link rel="stylesheet" href="stylesheets/base.css" type="text/css">
+	<link rel="stylesheet" href="stylesheets/skeleton.css" type="text/css">
+	<link rel="stylesheet" href="stylesheets/layout.css" type="text/css">
+	<link rel="stylesheet" href="stylesheets/style.css" type="text/css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600,700,900" type="text/css">
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -29,7 +30,7 @@
 
 
 </head>
-<body>
+<body id="home">
 
 
 
@@ -37,13 +38,15 @@
 	================================================== -->
 
 	<div class="container">
+	
+		<!-- HEADER
+		==================== -->
 		<header>
-		
-			<div class="nine columns">
+			<div class="five columns">
 			<h1>Art of Liz</h1>
 			</div>
 			
-			<div class="seven columns">
+			<div class="eleven columns">
 			<nav>
 				<ul>
 					<li><a href="index.html" class="active">Home</a></li>
@@ -55,25 +58,39 @@
 				</ul>
 			</nav>
 			</div>
-			
 		</header>
 		
+		<!-- PAGE TITLE
+		==================== -->
+		<!-- <div class="title">
+			<h2>&lt;&#47;HOME&gt;</h2>
+		</div> -->
+				
+		<!-- CALL TO ACTION
+		==================== -->
 		<section id="CTA">
-			<h2>Hi. I'm Liz.</h2>
+			<div class="sixteen columns">
+			<h3>Hi. I'm Liz.</h3>
 			<p>I'm developing <strong>mobile-friendly</strong> sites with style and creativity to make you <strong>stand out.</strong> Want something modern, minimal or clean? I've got you there, too. Get a <strong>free quote</strong> and increase your web presence today!</p>
+			</div>
+			
 			<div class="eight columns">
 			<img src="images/call_to_action.png" alt="A display of my process including composition, wireframe and notes" />
 			</div>
 			
 			<div class="six columns">
-			<span id="CTAbutton"><a href="#">Get Your Free Quote</a></span>
+			<span id="CTAbutton"><a href="contact.html">Get Your Free Quote</a></span>
 			</div>
-		</section> <!-- CTA -->
+		</section>
 		
-		<div class="sixteen columns">
-		</div>
+	</div><!-- container -->
+	
+	<!-- INFO BAR
+	==================== -->
+	<div class="infoBar">
+		<div class="container">
 		
-		<section class="infoBar">
+		<section>
 			<div class="four columns">
 			<article class="moduleItem">
 				<h3>Services</h3>
@@ -107,12 +124,14 @@
 			</div>
 		</section>
 		
-		<footer class="sixteen columns">
-			<p>&copy;2013 Lindsay Roberts <a href="#">http://www.artofliz.com</a> All Rights Reserved.</p>
-		</footer>
-
-	</div><!-- container -->
-
+		</div> <!--container -->
+	</div> <!-- infoBar -->
+	
+	<!-- FOOTER
+	==================== -->
+	<footer>
+		<p>&copy;2013 Lindsay Roberts <a href="#">http://www.artofliz.com</a> All Rights Reserved.</p>
+	</footer>
 
 <!-- End Document
 ================================================== -->

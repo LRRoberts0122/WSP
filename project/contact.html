@@ -18,10 +18,11 @@
 
 	<!-- CSS
   ================================================== -->
-	<link rel="stylesheet" href="stylesheets/base.css">
-	<link rel="stylesheet" href="stylesheets/skeleton.css">
-	<link rel="stylesheet" href="stylesheets/layout.css">
-	<link rel="stylesheet" href="stylesheets/style.css">
+	<link rel="stylesheet" href="stylesheets/base.css" type="text/css">
+	<link rel="stylesheet" href="stylesheets/skeleton.css" type="text/css">
+	<link rel="stylesheet" href="stylesheets/layout.css" type="text/css">
+	<link rel="stylesheet" href="stylesheets/style.css" type="text/css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600,700,900" type="text/css">
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -29,7 +30,7 @@
 
 
 </head>
-<body>
+<body id="contact">
 
 
 
@@ -37,13 +38,14 @@
 	================================================== -->
 
 	<div class="container">
+		<!-- HEADER
+		==================== -->
 		<header>
-		
-			<div class="nine columns">
+			<div class="five columns">
 			<h1>Art of Liz</h1>
 			</div>
 			
-			<div class="seven columns">
+			<div class="eleven columns">
 			<nav>
 				<ul>
 					<li><a href="index.html">Home</a></li>
@@ -55,15 +57,22 @@
 				</ul>
 			</nav>
 			</div>
-			
 		</header>
 		
+		<!-- PAGE TITLE
+		==================== -->
+		<!-- <div class="title">
+			<h2>&lt;&#47;CONTACT&gt;</h2>
+		</div> -->
+		
 		<form method="post" action="#">
+			<div class="sixteen columns">
 			<h3>Request a FREE Quote</h3>
 			<p>Fill out the information below for your free quote. *Required</p>
+			</div>
 			
-			<fieldset>
-				<div class="four columns">
+			<fieldset class="sixteen columns">
+				<div class="four columns alpha">
 				<label for="name">*Name</label>
 				<input type="text" name="name" id="name" required="required" />
 				</div>
@@ -75,14 +84,14 @@
 				</fieldset>
 				</div>
 				
-				<div class="eight columns">
+				<div class="eight columns omega">
 				<fieldset>
 					<label for="phone">Phone</label>
 					<input type="tel" name="phone" id="phone" placeholder="(XXX) XXX-XXXX" />
 				</fieldset>
 				</div>
 				
-				<div class="four columns">
+				<div class="four columns alpha">
 				<label for="website">Website</label>
 				<input type="url" name="website" id="website" placeholder="http://www.yourwebsite.com"/>
 				</div>
@@ -92,12 +101,12 @@
 				<input type="text" name="budget" id="budget" required="required" placeholder="$100 - $500" />
 				</div>
 				
-				<div class="eight columns">
+				<div class="eight columns omega">
 				<label for="deadline">*Deadline</label>
 				<input type="date" name="deadline" id="deadline" required="required" />
 				</div>
 								
-				<div class="four columns">
+				<div class="four columns alpha">
 				<label for="industry">*Industry</label>
 				<select name="industry" id="industry" required="required">
 					<option value="">Please Select One</option>
@@ -130,13 +139,13 @@
 				</fieldset>
 				</div>
 				
-				<div class="eight columns">
+				<div class="eight columns omega">
 				<label for="message">*Message</label>
 				<textarea name="message" id="message" required="required" placeholder="Message..."></textarea>
 				</div>
 				
-				<div class="eight columns"></div>
-				<div class="eight columns">
+				<div class="eight columns alpha"></div>
+				<div class="eight columns omega">
 				<button type="submit">Get Your Free Quote</button>
 				</div>
 			</fieldset>

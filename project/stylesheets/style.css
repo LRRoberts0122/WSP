@@ -1,27 +1,244 @@
+/* GLOBAL CSS
+================================================== */
+body {
+	background-image: url('../images/bg_pattern.jpg');
+	overflow-x: hidden;
+	/*background-image: url('../images/2_About.jpg');
+	background-position: center top;
+	background-repeat: no-repeat;*/
+}
+
+.container {
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+}
+
+
+/* ===== Logo ===== */
+h1 {
+  width: 164px; 
+  height: 136px;
+  background: url("../images/logo.png") no-repeat;
+  margin: 8px 0 5px;
+  text-indent: -9999px;
+}
+
+/* ===== Links ===== */
+a {
+	color: #E28CBB;
+}
+
+a:visited {
+	color: #E28CBB;
+}
+
+a:hover {
+	color: #B96694;
+}
+
+a:active {
+	color: #E28CBB;
+}
+
+/* ===== Typography ===== */
+nav, h2, h3, h4, p {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+nav, h2, h3 {
+	font-weight: bold;
+}
+
+h3 {
+	color: #007CAF;
+	margin: 0;
+	padding: 0;
+	font-weight: 400;
+	font-size: 14pt;
+}
+
+/* ===== Navigation ===== */
+ul {
+	list-style-type: none;
+}
+
+nav, h2 {
+	text-transform: uppercase;
+}
+
 nav {
+	font-size: 11pt;
+}
+
+nav ul {
 	float: right;
-	}
+}
 
 nav ul li {
-	display: block;
 	float: left;
-	margin-top: 35px;
-	}
+	margin-top: 50px;
+}
 
-nav ul li a, #CTA, span#CTAbutton a {
-	padding: 10px;
-	}
-
-span#CTAbutton a {
-	display: block;
-	font-size: 24px;
+nav ul li a {
 	text-decoration: none;
-	text-align: center;
-	background: #EEE;
-	width: 270px;
-	margin: 30px 0;
-	}
+	padding: 10px;
+	color: #b0b0a5;
+}
 
+nav ul li a:visited {
+	color: #b0b0a5;
+}
+
+nav ul li a:hover {
+	color: #e28cbb;
+}
+
+nav ul li a:before {
+	content:"<";
+}
+
+nav ul li a:after {
+	content:">";
+}
+
+nav ul li a:before, nav ul li a:after {
+	color: rgba(0,0,0,0);
+}
+
+nav a:hover:before, nav a:hover:after {
+	color: rgba(226, 140, 187, 1);
+}
+
+nav ul li a.active:before {
+	content:"</";
+}
+
+nav ul li a.active:after {
+	content:">";
+}
+
+nav ul li a.active, nav ul li a.active:before, nav ul li a.active:after {
+	color: rgba(0, 123, 174, 1);
+}
+
+/* ===== Page Title ===== */
+/* !Important - The header works in Firefox, not in Chrome.
+overflow-x: hidden; isn't functioning properly. */
+
+h2 {
+	display: block;
+	position: absolute;
+	left: 40%;
+	top: 10%;
+	z-index: -1;
+	font-size: 160pt;
+	color: rgba(0, 123, 174, .03);
+}
+
+/* ===== Info Bar ===== */
+.infoBar {
+	background-color: #000;
+	width: 100%;
+}
+
+.moduleItem {
+	padding: 10px 0 55px;
+}
+
+.moduleItem h3 {
+	margin-bottom: 5px;
+}
+
+.moduleItem p {
+	color: #deded3;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 16pt;
+	margin-bottom: 3px;
+}
+
+/* ===== Footer ===== */
 footer {
+	background-color: #007CAF;
 	text-align: center;
-	}
+}
+
+footer p, footer a, footer a:visited, footer a:hover, footer a:active {
+	color: #2396C4;
+	font-size: 8pt;
+}
+
+footer p {
+	margin: 0;
+}
+
+/* HOME
+================================================== */
+/* ===== Call to Action ===== */
+#CTA {
+	position: relative;
+}
+
+#CTAbutton a {
+	display: block;
+	position: absolute;
+	left: 594px;
+	top: 328px;
+	background: url('../images/button.png') no-repeat;
+	width: 309px;
+	height: 92px;
+	background-position: 0px 0px;
+	text-indent: -9999px;
+}
+
+#CTAbutton a:hover {
+	background-position: 0px -92px;
+}
+
+#CTA h3 {
+	font-size: 26pt;
+	margin-bottom: 16px;	
+}
+
+#CTA p {
+	font-size: 14pt;
+	font-weight: 200;
+	color: #000;
+	line-height: 1.5;
+}
+
+#CTA strong {
+	font-weight: 600;
+	color: #007CAF;
+}
+
+/* ABOUT 
+================================================== */
+#myPicture {
+	float: left;
+	margin: 0 10px 10px 0;
+	padding-top: 10px;
+}
+
+#aboutContent {
+	margin-bottom: 22px;
+}
+
+#about #aboutContent ul {
+	margin: 0 0 0 40px;
+	padding: 0;
+}
+
+#about #aboutContent ul strong {
+	font-weight: 600;
+}
+
+#about #aboutContent ul p {
+	margin: 0;
+	padding: 0;
+}
+
+#aboutWhy {
+	float: right;
+}
