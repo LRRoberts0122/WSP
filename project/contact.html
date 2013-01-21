@@ -74,13 +74,13 @@
 			<fieldset class="sixteen columns">
 				<div class="row">
 				<div class="five columns alpha" id="name0">
-				<label for="name">*Name</label>
+				<label for="name"><span class="required">*</span>Name</label>
 				<input type="text" name="name" id="name" required="required" />
 				</div>
 				
 				<div class="five columns" id="email0">
 				<fieldset>
-					<label for="email">*Email</label>
+					<label for="email"><span class="required">*</span>Email</label>
 					<input type="email" name="email" id="email" required="required" placeholder="youremail@gmail.com" />
 				</fieldset>
 				</div>
@@ -100,19 +100,19 @@
 				</div>
 				
 				<div class="five columns" id="budget0">
-				<label for="budget">*Budget</label>
+				<label for="budget">Budget</label>
 				<input type="text" name="budget" id="budget" required="required" placeholder="$100 - $500" />
 				</div>
 				
 				<div class="six columns omega" id="deadline0">
-				<label for="deadline">*Deadline</label>
+				<label for="deadline"><span class="required">*</span>Deadline</label>
 				<input type="date" name="deadline" id="deadline" required="required" />
 				</div>
 				</div> <!-- row -->
 								
 				<div class="row">
 				<div class="five columns alpha" id="industry0">
-				<label for="industry">*Industry</label>
+				<label for="industry"><span class="required">*</span>Industry</label>
 				<select name="industry" id="industry" required="required">
 					<option value="">Please Select One</option>
 					<option value="Personal">Personal</option>
@@ -123,12 +123,12 @@
 				</div>
 				
 				<div class="five columns" id="services0">
-				<fieldset>
-					<legend>*Services</legend>
+				<fieldset id="services1">
+					<legend><span class="required">*</span>Services</legend>
 					
 					<label for="webDesign">
 					<input type="checkbox" name="webDesign" id="webDesign" value="Website Design / Redesign" />
-					<span>Website Design / Redesign</span></label>
+					<span>Web Design / Redesign</span></label>
 					
 					<label for="graphicDesign">
 					<input type="checkbox" name="graphicDesign" id="graphicDesign" value="Logo / Graphic Design" />
@@ -145,15 +145,14 @@
 				</div>
 				
 				<div class="six columns omega" id="messages0">
-				<label for="message">*Message</label>
+				<label for="message"><span class="required">*</span>Message</label>
 				<textarea name="message" id="message" required="required" placeholder="Message..."></textarea>
 				</div>
 				</div> <!-- row -->
 				
 				<div class="row">
-				<div class="eight columns alpha"></div>
-				<div class="eight columns omega">
-				<button type="submit">Get Your Free Quote</button>
+				<div class="sixteen columns omega">
+				<button type="submit"></button>
 				</div>
 				</div> <!-- row -->
 			</fieldset>
@@ -168,8 +167,8 @@
 		
 		<section>
 			<div class="four columns">
-			<article class="moduleItem">
-				<p>Get in Touch</p>
+			<article class="moduleItem" id="miContact">
+				<p>Get</p> <p>in</p> <p>Touch</p>
 			</article>
 			</div>
 			

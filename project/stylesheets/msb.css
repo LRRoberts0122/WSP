@@ -37,6 +37,3 @@
 .msb-box, .msb-current, .msb-items > li {
   cursor:pointer;
 }
-.msb-disabled:hover{
-	cursor:default;
-}
