@@ -61,6 +61,20 @@
 			</div>
 			
 			<div class="twelve columns">
+			<script type="text/javascript">
+				jQuery(document).ready(function($){
+
+					/* prepend menu icon */
+					$('#nav-wrap').prepend('<div id="menu-icon"></div>');
+	
+					/* toggle nav */
+					$("#menu-icon").on("click", function(){
+						$("#nav").slideToggle();
+						$(this).toggleClass("active");
+					});
+
+				});
+			</script>
 			<nav id="nav-wrap">
 				<ul id="nav">
 					<li><a href="index.html" class="active">Home</a></li>
@@ -74,60 +88,7 @@
 			</div>
 		</header>
 				
-		<!-- CALL TO ACTION
-		==================== -->
-		
-	</div><!-- container -->
 	
-		
-	<!-- INFO BAR
-	==================== -->
-	<div class="infoBar">
-		<div class="container">
-		
-		<section>
-			<div class="four columns">
-			<article class="moduleItem">
-				<h3>Services</h3>
-				<p>Web, Graphic, Design.</p>
-				<p>Anything to fit your needs.</p>
-			</article>
-			</div>
-			
-			<div class="four columns">
-			<article class="moduleItem">
-				<h3>My Work</h3>
-				<p>The latest and greatest.</p>
-				<p>Get to know me.</p>
-			</article>
-			</div>
-			
-			<div class="four columns">
-			<article class="moduleItem">
-				<h3>Latest Blog Post</h3>
-				<p>New Wallpaper</p>
-				<p><a href="#">Read more</a></p>
-			</article>
-			</div>
-			
-			<div class="four columns">
-			<article class="moduleItem">
-				<h3>Recent Freebies</h3>
-				<p>Social Media Icon Set</p>
-				<p>Over 25 Vector Icons for free.</p>
-			</article>
-			</div>
-		</section>
-		
-		</div> <!--container -->
-	</div> <!-- infoBar -->
-	
-	<!-- FOOTER
-	==================== -->
-	<footer>
-		<p>&copy;2013 Lindsay Roberts <a href="#">http://www.artofliz.com</a> All Rights Reserved.</p>
-	</footer>
-
 <!-- End Document
 ================================================== -->
 </body>
