@@ -645,8 +645,8 @@ select {
 		
 		#CTA img { 
 			margin: 10px 0 0 0; 
-			width: 90%;
-			height: auto;
+			width: 315px;
+			height: 141px;
 		}
 		
 		.mainContent {
@@ -656,8 +656,12 @@ select {
 		#CTA { 
 			position: relative; 
 		}
+		
+		#CTAbutton a {
+			display: none;
+		}
 
-		#CTAbutton a { 
+		/* #CTAbutton a { 
 			display: block; 
 			position: inherit;
 			margin: 0 auto;
@@ -671,7 +675,7 @@ select {
 
 		#CTAbutton a:hover { 
 			background-position: 0 0; 
-		}
+		} */
 		
 		
 	}
