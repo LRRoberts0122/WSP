@@ -585,15 +585,7 @@ select {
 	@media only screen and (max-width: 959px) {}
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
-	@media only screen and (min-width: 768px) and (max-width: 959px) {}
-
-	/* All Mobile Sizes (devices and browser) */
-	@media only screen and (max-width: 767px) {
-		
-		html {
-			background: none;
-		}
-		
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
 		body {
 			background: url('../images/mobile_bg.jpg') repeat-x, #dfdfd5;
 		}
@@ -640,6 +632,76 @@ select {
 			color: #deded3;
 		}
 		
+		#CTAbutton a { 
+			display: block; 
+			/*margin: 0 auto;*/
+			background: url('../images/mobile_button.jpg') no-repeat; 
+			width: 232px; 
+			height: 49px; 
+			background-position: 0 0; 
+			text-indent: -9999px; 
+			margin-bottom: 10px;
+			margin-left: 500px;
+			/* margin-top: 155px; */
+		}
+
+		#CTAbutton a:hover { 
+			background-position: 0 0; 
+		}
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+		body {
+			background: url('../images/mobile_bg.jpg') repeat-x, #dfdfd5;
+		}
+		
+		header {
+			position: relative;
+		}
+		
+		h1 { 
+			width: 118px; 
+			height: 99px; 
+			margin-top: 0;
+			float: left;
+			background: url('../images/mobile-logo.png') no-repeat; 
+		}
+		
+		#menu-icon {
+			color: #000;
+			width: 45px;
+			height: 38px;
+			background: url('../images/menu-icon.jpg') no-repeat center right;
+			cursor: pointer;
+			display: block;
+			float: right;
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+		
+		#nav {
+			position: absolute;
+			top: 25px;
+			right: 0;
+			width: 130px;
+			z-index: 9999;
+			background: #fff;
+			padding: 15px;
+			display: none;
+		}
+		
+		nav ul li {
+			margin-top: 0;
+			padding: 10px;
+			color: #deded3;
+		}
+		
+		html {
+			background: none;
+		}
+		
 		#home .mainContent {
 			background: url('../images/call_to_action-mobile.png') no-repeat;
 			background-size: contain;
@@ -648,22 +710,12 @@ select {
 		.mainContent {
 			min-height: 1px;
 		}
-
-		#CTAbutton a { 
-			display: block; 
-			margin: 0 auto;
-			background: url('../images/mobile_button.jpg') no-repeat; 
-			width: 232px; 
-			height: 49px; 
-			background-position: 0 0; 
-			text-indent: -9999px; 
-			margin-bottom: 10px;
-		}
-
-		#CTAbutton a:hover { 
-			background-position: 0 0; 
-		}
 		
+		#home .mainContent {
+			background: url('../images/call_to_action-mobile.png') no-repeat;
+			background-position: 0px 295px;
+			min-height: 495px;
+		}
 		
 	}
 
@@ -679,11 +731,5 @@ select {
 		
 		#CTAbutton a {
 			margin-top: 145px;
-		}
-		
-		#home .mainContent {
-			background: url('../images/call_to_action-mobile.png') no-repeat;
-			background-position: 0px 295px;
-			min-height: 495px;
 		}
 	}
