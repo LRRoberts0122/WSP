@@ -1,0 +1,39 @@
+/*http://www.colorzilla.com/gradient-editor/#efefef+8,ffffff+33;Custom and http://www.colorzilla.com/gradient-editor/#ffffff+8,efefef+52;Custom*/
+.msb{
+	border-radius:3px;
+	margin:0px;
+	padding:0px;
+	overflow:hidden;
+	
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.msb *{
+	margin:0px;
+	padding:0px;
+}
+.msb-box{
+	float:right;
+}
+.msb-box > div{
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  vertical-align:top;
+}
+.msb > ul{
+  list-style-type:none;
+}
+.msb-items{
+  position:absolute;
+  margin-left:-1px;
+  z-index:999;
+}
+.msb-box, .msb-current, .msb-items > li {
+  cursor:pointer;
+}
