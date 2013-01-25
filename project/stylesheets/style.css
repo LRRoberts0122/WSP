@@ -598,7 +598,6 @@ select {
 			background: url('../images/mobile_bg.jpg') repeat-x, #dfdfd5;
 		}
 		
-		
 		header {
 			position: relative;
 		}
@@ -641,10 +640,9 @@ select {
 			color: #deded3;
 		}
 		
-		#CTA img { 
-			margin: 10px 0 0 0; 
-			width: 315px;
-			height: 141px;
+		#home .mainContent {
+			background: url('../images/call_to_action-mobile.png') no-repeat;
+			background-size: contain;
 		}
 		
 		.mainContent {
@@ -677,5 +675,15 @@ select {
 	@media only screen and (max-width: 479px) {
 		#CTA p { 
 			line-height: 1.2; 
+		}
+		
+		#CTAbutton a {
+			margin-top: 145px;
+		}
+		
+		#home .mainContent {
+			background: url('../images/call_to_action-mobile.png') no-repeat;
+			background-position: 0px 295px;
+			min-height: 495px;
 		}
 	}
