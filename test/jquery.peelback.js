@@ -65,19 +65,13 @@
         'width': '0',
         'height': '0',
         'z-index': '9001',
-        'position': 'absolute',
-        'right': '0',
-        'bottom': '0',
         '-ms-interpolation-mode': 'bicubic'
       });
     
       $(peelMask).css({
         'width': '0',
-        'height': '0',
+        'height': '215px',
         'overflow': 'hidden',
-        'position': 'absolute',
-        'right': '0',
-        'bottom': '0',
         'z-index': '9000',
         'background': 'url(' + base.settings.adImage + ') no-repeat right bottom'
       });
