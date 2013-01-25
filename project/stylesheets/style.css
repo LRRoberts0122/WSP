@@ -632,7 +632,7 @@ select {
 			right: 0;
 			width: 130px;
 			z-index: 9999;
-			background: #000;
+			background: #fff;
 			padding: 15px;
 			display: none;
 		}
@@ -684,9 +684,5 @@ select {
 	@media only screen and (max-width: 479px) {
 		#CTA p { 
 			line-height: 1.2; 
-		}
-		
-		body {
-			max-width: 320px;
 		}
 	}
