@@ -685,4 +685,8 @@ select {
 		#CTA p { 
 			line-height: 1.2; 
 		}
+		
+		body {
+			max-width: 320px;
+		}
 	}
