@@ -186,15 +186,10 @@ footer p {
 
 /* HOME PAGE
 ================================================== */
-#CTA { 
-	position: relative; 
-	}
-
 #CTAbutton a { 
 	display: block; 
-	/* position: absolute; 
-	left: 594px; 
-	top: 328px; */
+	margin-left: 580px;
+	margin-top: 80px;	
 	background: url('../images/button.png') no-repeat; 
 	width: 309px; 
 	height: 92px; 
@@ -203,7 +198,7 @@ footer p {
 	}
 
 #CTAbutton a:hover { 
-	background-position: 0 -91px; 
+	background-position: 0 -92px; 
 	}
 
 #CTA h3 { 
@@ -218,14 +213,15 @@ footer p {
 	margin: 0; 
 	}
 
-#CTA img { 
-	margin: 10px 0 2px; 
-	}
-
 #CTA strong { 
 	font-weight: 600; 
 	color: #007CAF; 
 	}
+
+#home .mainContent {
+	background: url('../images/call_to_action.png') no-repeat;
+	background-position: bottom left;
+}
 
 
 /* ABOUT PAGE
