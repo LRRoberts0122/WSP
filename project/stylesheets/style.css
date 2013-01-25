@@ -10,6 +10,7 @@ html {
 
 body { 
 	background: url('../images/bg_pattern.jpg'); 
+	overflow-x: hidden;
 	}
 
 .container { 
