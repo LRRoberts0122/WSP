@@ -650,18 +650,9 @@ select {
 		.mainContent {
 			min-height: 1px;
 		}
-		
-		#CTA { 
-			position: relative; 
-		}
-		
-		#CTAbutton a {
-			display: none;
-		}
 
-		/* #CTAbutton a { 
+		#CTAbutton a { 
 			display: block; 
-			position: inherit;
 			margin: 0 auto;
 			background: url('../images/mobile_button.jpg') no-repeat; 
 			width: 232px; 
