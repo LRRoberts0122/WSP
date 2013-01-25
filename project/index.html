@@ -14,21 +14,35 @@
 
 	<!-- Mobile Specific Metas
   ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="viewport" content="width=959px, initial-scale=1, maximum-scale=1">
+	<meta name="viewport" content="width=767px, initial-scale=1, maximum-scale=1">
+	<meta name="viewport" content="width=479px, initial-scale=1, maximum-scale=1">
 
 	<!-- CSS
   ================================================== -->
 	<link rel="stylesheet" href="stylesheets/base.css" type="text/css">
 	<link rel="stylesheet" href="stylesheets/skeleton.css" type="text/css">
-	<link rel="stylesheet" href="stylesheets/layout.css" type="text/css">
 	<link rel="stylesheet" href="stylesheets/style.css" type="text/css">
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600,700,900" type="text/css">
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
+	
+	<!-- CSS
+  ================================================== -->	
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-37507947-2']);
+		_gaq.push(['_trackPageview']);
 
-
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();]	
+	</script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
 </head>
 <body id="home">
 
@@ -39,16 +53,30 @@
 
 	<div class="container">
 	
-		<!-- HEADER
+		<!-- HEADER ONE
 		==================== -->
 		<header>
-			<div class="five columns">
+			<div class="four columns">
 			<h1>Art of Liz</h1>
 			</div>
 			
-			<div class="eleven columns">
-			<nav>
-				<ul>
+			<div class="twelve columns">
+			<script type="text/javascript">
+				jQuery(document).ready(function($){
+
+					/* prepend menu icon */
+					$('#nav-wrap').prepend('<div id="menu-icon"></div>');
+	
+					/* toggle nav */
+					$("#menu-icon").on("click", function(){
+						$("#nav").slideToggle();
+						$(this).toggleClass("active");
+					});
+
+				});
+			</script>
+			<nav id="nav-wrap">
+				<ul id="nav">
 					<li><a href="index.html" class="active">Home</a></li>
 					<li><a href="about.html">About</a></li>
 					<li><a href="portfolio.html">Portfolio</a></li>
@@ -59,12 +87,6 @@
 			</nav>
 			</div>
 		</header>
-		
-		<!-- PAGE TITLE
-		==================== -->
-		<!-- <div class="title">
-			<h2>&lt;&#47;HOME&gt;</h2>
-		</div> -->
 				
 		<!-- CALL TO ACTION
 		==================== -->
