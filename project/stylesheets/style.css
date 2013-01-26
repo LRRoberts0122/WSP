@@ -144,6 +144,15 @@ nav ul li a.active:after {
 	color: #007bae; 
 	}
 
+#about .mainContent p, #portfolio .mainContent p {
+	line-height: 1.5;
+	margin-bottom: 15px;	
+}
+
+#about #aboutWhy ul li p {
+	margin-bottom: 0;
+}
+
 .infoBar {
 	background-color: #000;
 	width: 100%;
@@ -237,7 +246,7 @@ footer p {
 	}
 
 #about #aboutContent ul { 
-	margin: 10px 0 0 40px; 
+	margin-top: 10px;
 	padding: 0; 
 	}
 
@@ -245,13 +254,18 @@ footer p {
 	font-weight: 600; 
 	}
 
-#about #aboutContent ul p { 
-	margin: 0; padding: 0; 
+#about #aboutContent ul li p { 
+	margin: 0; 
+	padding: 0; 
 	}
 
 #aboutWhy { 
 	float: right; 
 	}
+
+#aboutWhy ul li p {
+	margin-bottom: 5px;
+}
 
 .reference { 
 	font-weight: 200; 
@@ -271,36 +285,25 @@ footer p {
 	background-position: right 100px;
 }
 
-#portfolio .moduleItem img {
-	
+#portfolio .moduleItem {
+	margin: 0;
+	padding: 0;
 }
 
-#portfolio .infoBar { 
-	padding: 0; 
-	margin: 0; 
-	position: relative; 
+#case h3, #web h3, #graphic h3, #art h3 {
+	padding-top: 22px;
+}
+
+#portfolio .infoBar section { 
+	min-height: 186px;
+	background: 
+		url('../images/portfolio_01.jpg') no-repeat 2% 0, 
+		url('../images/portfolio_02.jpg') no-repeat 34% 0, 
+		url('../images/portfolio_03.jpg') no-repeat 66% 0, 
+		url('../images/portfolio_04.jpg') no-repeat 98% 0, 
+		#000;
 	}
 
-#portfolio .infoBar img { 
-	position: absolute; 
-	top: 0; 
-	}
-
-/* #case { 
-	background: url('../images/portfolio_01.jpg') no-repeat; 
-	}
-
-#web { 
-	background: url('../images/portfolio_02.jpg') no-repeat; 
-	}
-
-#graphic { 
-	background: url('../images/portfolio_03.jpg') no-repeat; 
-	}
-
-#art { 
-	background: url('../images/portfolio_04.jpg') no-repeat; 
-	} */
 
 
 /* BLOG PAGE
@@ -600,7 +603,10 @@ select {
 ================================================== */
 
 	/* Smaller than standard 960 (devices and browsers) */
-	@media only screen and (max-width: 959px) {}
+	@media only screen and (max-width: 959px) {
+		
+		
+	}
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
 	@media only screen and (min-width: 768px) and (max-width: 959px) {
@@ -666,6 +672,21 @@ select {
 		#CTAbutton a:hover { 
 			background-position: 0 0; 
 		}
+		
+		#about .infoBar img {
+			width: 80%;
+			height: 80%;
+		}
+		
+		#portfolio .infoBar section { 
+			background: #000;
+		}
+
+		#portfolio .mainContent {
+			background: url('../images/portfolio_image.png') no-repeat;
+			background-position: right center;
+			background-size: 55%;
+		}
 	}
 
 	/* All Mobile Sizes (devices and browser) */
@@ -684,6 +705,21 @@ select {
 			margin-top: 0;
 			float: left;
 			background: url('../images/mobile-logo.png') no-repeat; 
+		}
+		
+		#CTAbutton a { 
+			display: block; 
+			margin: 0 auto;
+			background: url('../images/mobile_button.jpg') no-repeat; 
+			width: 232px; 
+			height: 49px; 
+			background-position: 0 0; 
+			text-indent: -9999px; 
+			margin-top: 15px;
+		}
+
+		#CTAbutton a:hover { 
+			background-position: 0 0; 
 		}
 		
 		.mainContent h3 {
@@ -739,8 +775,12 @@ select {
 		
 		#home .mainContent {
 			background: url('../images/call_to_action-mobile.png') no-repeat;
-			background-position: 0px 295px;
+			background-position: center 100px;
 			min-height: 495px;
+		}
+		
+		#CTA h3 {
+			margin-top: 130px;
 		}
 		
 		#myPicture { 
@@ -756,10 +796,73 @@ select {
 			display: none;
 		}
 		
+		#portfolio .mainContent {
+			background: url('../images/portfolio_image-mobile.png') no-repeat;
+			background-position: center 105px;
+			min-height: 500px;
+		}
+		
+		#portfolio .mainContent h3 {
+			margin-top: 205px;
+		}
+		
+		#portfolio .infoBar {
+			margin-top: 10px;
+		}
+		
+		#portfolio .mainContent p {
+			margin-bottom: 15px;	
+		}
+		
+		#portfolio .infoBar section {
+			background: #000;
+		}
+		
+		#portfolio .moduleItem {
+			padding-left: 100px;
+		}
+		
+		#case { 
+			background: 
+			url('../images/portfolio_1.jpg') no-repeat bottom left;
+			background-size: 27%;
+		}
+		
+		#web { 
+			background: 
+			url('../images/portfolio_2.jpg') no-repeat bottom left;
+			background-size: 27%;
+		}
+		
+		#graphic { 
+			background: 
+			url('../images/portfolio_3.jpg') no-repeat bottom left;
+			background-size: 27%;
+		}
+		
+		#art { 
+			background: 
+			url('../images/portfolio_4.jpg') no-repeat bottom left;
+			background-size: 27%;
+		}
+		
 	}
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		#case, #web, #graphic, #art {
+			background-size: 20%;
+		}
+		
+		#portfolio .mainContent {
+			background: url('../images/portfolio_image.png') no-repeat;
+			background-position: center 105px;
+			background-size: 100%;
+		}
+		
+		#portfolio .mainContent h3 {
+			margin-top: 295px;
+		}
 	}
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
@@ -769,6 +872,11 @@ select {
 		}
 		
 		#CTAbutton a {
-			margin-top: 145px;
+			margin-top: 15px;
+		}
+		
+		#portfolio .mainContent {
+			background: url('../images/portfolio_image-mobile.png') no-repeat;
+			background-position: center 105px;
 		}
 	}
