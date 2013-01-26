@@ -27,7 +27,8 @@ h1 {
 	width: 164px; 
 	height: 136px; 
 	background: url("../images/logo.png") no-repeat; 
-	margin: 8px 0 5px; text-indent: -9999px; 
+	margin: 8px 0 5px; 
+	text-indent: -9999px; 
 	}
 
 a { 
@@ -54,11 +55,14 @@ p {
 	font-family: 'Source Sans Pro', sans-serif; 
 	}
 
-nav, 
-h2, 
+nav,  
 h3 { 
 	font-weight: 700; 
 	}
+
+h2 {
+	display: none;
+}
 
 h3 { 
 	color: #007CAF; 
@@ -263,7 +267,7 @@ footer p {
 /* PORTFOLIO PAGE
 ================================================== */
 #portfolio .mainContent {
-	background: url('../images/portfolio.png') no-repeat;
+	background: url('../images/portfolio_image.png') no-repeat;
 	background-position: right 100px;
 }
 
@@ -578,6 +582,21 @@ select {
 	color: #B9668D; 
 	}
 
+#thankyou .mainContent {
+	background: url('../images/avatar.png') no-repeat center center;
+	background-position-x: 185px;
+	background-position-y: 115px;
+}
+	
+#thankyou .mainContent section {
+	min-height: 200px;
+	margin: 145px 0 0 195px;
+}
+
+#thankyou .mainContent section h3 {
+	display: none;
+}
+
 /* #Media Queries
 ================================================== */
 
@@ -668,6 +687,10 @@ select {
 			background: url('../images/mobile-logo.png') no-repeat; 
 		}
 		
+		.mainContent h3 {
+			margin-top: 20px;
+		}
+		
 		#menu-icon {
 			color: #000;
 			width: 45px;
@@ -711,10 +734,27 @@ select {
 			min-height: 1px;
 		}
 		
+		.infoBar {
+			padding-bottom: 20px;
+		}
+		
 		#home .mainContent {
 			background: url('../images/call_to_action-mobile.png') no-repeat;
 			background-position: 0px 295px;
 			min-height: 495px;
+		}
+		
+		#myPicture { 
+			margin-bottom: 0px; 
+		}
+		
+		#about ul {
+			padding-left: 0;
+			margin-left: 0;
+		}
+		
+		#about .infoBar img {
+			display: none;
 		}
 		
 	}
