@@ -583,9 +583,8 @@ select {
 	}
 
 #thankyou .mainContent {
-	background: url('../images/avatar.png') no-repeat center center;
-	background-position-x: 185px;
-	background-position-y: 115px;
+	background: url('../images/avatar.png') no-repeat;
+	background-position: center 125px;
 }
 	
 #thankyou .mainContent section {
