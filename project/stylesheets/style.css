@@ -29,6 +29,7 @@ h1 a {
 	height: 136px; 
 	background: url("../images/logo.png") no-repeat; 
 	text-indent: -9999px; 
+	color: rgba(0,0,0,0);
 	padding: 0;
 	margin: 0;
 	}
@@ -678,6 +679,7 @@ select {
 			margin: 0;
 			padding: 0;
 			float: left;
+			color: rgba(0,0,0,0);
 			background: url('../images/mobile-logo.png') no-repeat; 
 		}
 		
@@ -768,6 +770,7 @@ select {
 			margin: 0;
 			padding: 0;
 			float: left;
+			color: rgba(0,0,0,0);
 			background: url('../images/mobile-logo.png') no-repeat; 
 		}
 		
