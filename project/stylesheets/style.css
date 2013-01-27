@@ -23,13 +23,19 @@ body {
 	min-height: 505px;
 }
 
-h1 { 
+h1 a { 
+	display: block;
 	width: 164px; 
 	height: 136px; 
 	background: url("../images/logo.png") no-repeat; 
-	margin: 8px 0 5px; 
 	text-indent: -9999px; 
+	padding: 0;
+	margin: 0;
 	}
+	
+h1 {
+	margin: 8px 0 5px; 
+}
 
 a { 
 	color: #E28CBB; 
@@ -605,6 +611,54 @@ select {
 	/* Smaller than standard 960 (devices and browsers) */
 	@media only screen and (max-width: 959px) {
 		
+		#contact label, 
+		#contact legend { 
+			float: left; 
+			margin-right: 0; 
+			width: 150px;
+			text-align: left; 
+			text-transform: uppercase; 
+			display: block; 
+			font-size: 10pt; 
+			font-weight: 600;
+			color: #007CAF; 
+		}
+		
+		#services1 label { 
+			text-transform: capitalize; 
+			font-size: 10pt; 
+			font-weight: 400; 
+			color: #000; 
+			text-align: left; 
+			display: block; 
+			width: 300px; 
+			margin-left: 0px; 
+			line-height: 16pt; 
+		}
+		
+		#contact input[type="checkbox"] { 
+			float: left; 
+			display: block; 
+			width: 15px; 
+			clear: both; 
+			margin-left: 0; 
+			margin-right: 8px; 
+		}
+		
+		#contact button { 
+			display: block; 
+			background: url('../images/button_small.png') no-repeat; 
+			width: 209px; 
+			height: 59px; 
+			background-position: 0 0; 
+			border: 0; 
+			float: right; 
+			margin-right: 70px; 
+		}
+		
+		.blogPost img {
+			display: none;
+		}
 		
 	}
 
@@ -618,12 +672,18 @@ select {
 			position: relative;
 		}
 		
-		h1 { 
+		h1 a { 
 			width: 118px; 
 			height: 99px; 
-			margin-top: 0;
+			margin: 0;
+			padding: 0;
 			float: left;
 			background: url('../images/mobile-logo.png') no-repeat; 
+		}
+		
+		h1 {
+			margin: 0;
+			padding: 0;
 		}
 		
 		#menu-icon {
@@ -641,11 +701,13 @@ select {
 		
 		#nav {
 			position: absolute;
-			top: 25px;
+			top: 23px;
 			right: 0;
-			width: 130px;
+			width: 150px;
 			z-index: 9999;
-			background: #fff;
+			background: #E7E7E1;
+			border: 10px solid #fff;
+			box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
 			padding: 15px;
 			display: none;
 		}
@@ -687,6 +749,7 @@ select {
 			background-position: right center;
 			background-size: 55%;
 		}
+		
 	}
 
 	/* All Mobile Sizes (devices and browser) */
@@ -699,12 +762,18 @@ select {
 			position: relative;
 		}
 		
-		h1 { 
+		h1 a { 
 			width: 118px; 
 			height: 99px; 
-			margin-top: 0;
+			margin: 0;
+			padding: 0;
 			float: left;
 			background: url('../images/mobile-logo.png') no-repeat; 
+		}
+		
+		h1 {
+			margin: 0;
+			padding: 0;
 		}
 		
 		#CTAbutton a { 
@@ -741,11 +810,13 @@ select {
 		
 		#nav {
 			position: absolute;
-			top: 25px;
+			top: 23px;
 			right: 0;
 			width: 130px;
 			z-index: 9999;
-			background: #fff;
+			background: #E7E7E1;
+			border: 10px solid #fff;
+			box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
 			padding: 15px;
 			display: none;
 		}
@@ -846,6 +917,83 @@ select {
 			background-size: 27%;
 		}
 		
+		#contact label, 
+		#contact legend { 
+			float: left; 
+			width: 100px; 
+			margin-right: 13px; 
+			text-align: right; 
+			text-transform: uppercase; 
+			display: block; 
+			font-size: 10pt; 
+			font-weight: 600;
+			color: #007CAF; 
+			margin-bottom: 20px;
+		}
+		
+		#contact legend {
+			margin: 0;
+		}
+
+		
+		#contact input { 
+			width: 250px;
+			clear: both; 
+		}
+		
+		#contact textarea { 
+			height: 80px; 
+			width: 250px; 
+		}
+		
+		#services1 label { 
+			text-transform: capitalize; 
+			font-size: 10pt; 
+			font-weight: 400; 
+			color: #000; 
+			text-align: left; 
+			display: block; 
+			width: 220px; 
+			margin-left: 60px; 
+			line-height: 16pt; 
+			margin-bottom: 0px;
+			clear: both;
+			padding-top: 0;
+		}
+		
+		#contact input[type="checkbox"] { 
+			float: left; 
+			display: block; 
+			width: 15px; 
+			clear: both; 
+			margin-left: 50px; 
+			margin-right: 8px; 
+		}
+		
+		#contact label[for="other"] { 
+			margin-bottom: 20px; 
+		}
+		
+		#contact button { 
+			display: block; 
+			background: url('../images/button_small.png') no-repeat; 
+			width: 209px; 
+			height: 59px; 
+			background-position: 0 0; 
+			border: 0; 
+			float: right; 
+			margin-right: 100px; 
+		}
+		
+		#miContact p { 
+			font-size: 22pt; 
+			font-weight: 600; 
+			float: left;
+			text-align: left; 
+			color: #007caf; 
+			margin-right: 8px; 
+		}
+		
 	}
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
@@ -863,6 +1011,8 @@ select {
 		#portfolio .mainContent h3 {
 			margin-top: 295px;
 		}
+		
+		
 	}
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
@@ -878,5 +1028,81 @@ select {
 		#portfolio .mainContent {
 			background: url('../images/portfolio_image-mobile.png') no-repeat;
 			background-position: center 105px;
+		}
+		
+		#contact label, 
+		#contact legend { 
+			float: left; 
+			width: 100px; 
+			margin-right: 13px; 
+			text-align: left; 
+			text-transform: uppercase; 
+			display: block; 
+			font-size: 10pt; 
+			font-weight: 600;
+			color: #007CAF; 
+			margin-bottom: 3px;
+		}
+		
+		#contact legend {
+			margin: 0;
+		}
+
+		
+		#contact input { 
+			width: 250px;
+			clear: both; 
+			margin-bottom: 15px;
+		}
+		
+		#contact textarea { 
+			height: 80px; 
+			width: 250px; 
+		}
+		
+		#contact #services1 label { 
+			text-transform: capitalize; 
+			font-size: 10pt; 
+			font-weight: 400; 
+			color: #000; 
+			text-align: left; 
+			display: block; 
+			width: 250px; 
+			height: 20px;
+			margin-left: 0px; 
+			line-height: 12pt; 
+			margin-bottom: 0;
+			clear: both;
+			padding-top: 0;
+		}
+		
+		#contact input[type="checkbox"] { 
+			float: left; 
+			display: block; 
+			width: 15px; 
+			clear: both; 
+			margin-left: 0; 
+			margin-right: 8px; 
+		}
+		
+		#contact select {
+			clear: both;
+			width: 250px;
+			margin-bottom: 20px;
+		}
+		
+		#contact label[for="other"] {
+			padding-bottom: 20px;
+		}
+		
+		#contact button { 
+			display: block; 
+			background: url('../images/button_small.png') no-repeat; 
+			width: 209px; 
+			height: 59px; 
+			background-position: 0 0; 
+			border: 0; 
+			float: right; 
+			margin-right: 100px; 
 		}
 	}
