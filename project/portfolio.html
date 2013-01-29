@@ -116,36 +116,108 @@
 		<div class="container">
 		
 		<section>
-			<div class="four columns">
+		<script src="javascript/jquery-1.8.1.min.js"></script>
+		<script src="javascript/jquery.peelback.js"></script> 
+		
+		
+			<div class="four columns" class="imageWrap">
 			<article class="moduleItem" id="case">
+				<div class="picText">
 				<h3>Case Study</h3>
 				<p>The making of Art of Liz</p>
 				<p><a href="photoswipe/ps/gallery.html">www.artofliz.com</a></p>
+				</div>
 			</article>
+
+			<script>
+			$(function() {
+			  $('#case').peelback({
+			    adImage  : 'images/portfolio_1b.jpg',
+			    peelImage  : 'images/corner.png',
+			    clickURL : '#',
+			    smallSize: 50,
+			    bigSize: 600,
+			    gaTrack  : true,
+			    gaLabel  : 'TEST',
+			    autoAnimate: true
+			  });
+			});
+			</script>
 			</div>
 			
 			<div class="four columns">
 			<article class="moduleItem" id="web">
+				<div class="picText">
 				<h3>Web Design</h3>
 				<p>See some of my designs.</p>
 				<p><a href="#">View Comps</a></p>
-			</article>
+				</div>
+			</article>	
+			
+			<script>
+			$(function() {
+			  $('#web').peelback({
+			    adImage  : 'images/portfolio_1b.jpg',
+			    peelImage  : 'images/corner.png',
+			    clickURL : '#',
+			    smallSize: 50,
+			    bigSize: 600,
+			    gaTrack  : true,
+			    gaLabel  : 'TEST',
+			    autoAnimate: true
+			  });
+			});
+			</script>		
 			</div>
 			
 			<div class="four columns">
 			<article class="moduleItem" id="graphic">
+				<div class="picText">
 				<h3>Graphic Design</h3>
 				<p>Wireframe Revisions</p>
 				<p><a href="#">View Graphics</a></p>
+				</div>
 			</article>
+			
+			<script>
+			$(function() {
+			  $('#graphic').peelback({
+			    adImage  : 'images/portfolio_1b.jpg',
+			    peelImage  : 'images/corner.png',
+			    clickURL : '#',
+			    smallSize: 50,
+			    bigSize: 600,
+			    gaTrack  : true,
+			    gaLabel  : 'TEST',
+			    autoAnimate: true
+			  });
+			});
+			</script>
 			</div>
 			
 			<div class="four columns">
 			<article class="moduleItem" id="art">
+				<div class="picText">
 				<h3>Traditional Artwork</h3>
 				<p>See some of my art.</p>
 				<p><a href="#">View Artwork</a></p>
+				</div>
 			</article>
+			
+			<script>
+			$(function() {
+			  $('#art').peelback({
+			    adImage  : 'images/portfolio_1b.jpg',
+			    peelImage  : 'images/corner.png',
+			    clickURL : '#',
+			    smallSize: 50,
+			    bigSize: 600,
+			    gaTrack  : true,
+			    gaLabel  : 'TEST',
+			    autoAnimate: true
+			  });
+			});
+			</script>
 			</div>
 		</section>
 		
