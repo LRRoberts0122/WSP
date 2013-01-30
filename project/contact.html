@@ -28,31 +28,16 @@
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 
-	<!-- CSS
+	<!-- JavaScript
   ================================================== -->	
-	<script type="text/javascript">
-
-		var _gaq = _gaq || [];
-		_gaq.push(['_setAccount', 'UA-37507947-2']);
-		_gaq.push(['_trackPageview']);
-
-		(function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-			})();
-
-	</script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
 </head>
 <body id="contact">
 
-
-
 	<!-- Primary Page Layout
 	================================================== -->
-
 	<div class="container">
+	
 		<!-- HEADER
 		==================== -->
 		<header>
@@ -63,137 +48,138 @@
 			</div>
 			
 			<div class="eleven columns">
-			<div id="callMe">
-				<a href="tel:+13525527216">Call Me</a>
-			</div>
-			<script type="text/javascript">
-				jQuery(document).ready(function($){
-
-					/* prepend menu icon */
-					$('#nav-wrap').prepend('<div id="menu-icon"></div>');
+				<div id="callMe">
+					<a href="tel:+13525527216">Call Me</a>
+				</div>
+				
+				<script type="text/javascript">
+					jQuery(document).ready(function($){
 	
-					/* toggle nav */
-					$("#menu-icon").on("click", function(){
-						$("#nav").slideToggle();
-						$(this).toggleClass("active");
+						/* prepend menu icon */
+						$('#nav-wrap').prepend('<div id="menu-icon"></div>');
+		
+						/* toggle nav */
+						$("#menu-icon").on("click", function(){
+							$("#nav").slideToggle();
+							$(this).toggleClass("active");
+						});
+	
 					});
-
-				});
-			</script>
-			<nav id="nav-wrap">
-				<ul id="nav">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="portfolio.html">Portfolio</a></li>
-					<li><a href="blog.html">Blog</a></li>
-					<li><a href="resources.html">Resources</a></li>
-					<li><a href="contact.html" class="active">Contact</a></li>
-				</ul>
-			</nav>
+				</script>
+				
+				<nav id="nav-wrap">
+					<ul id="nav">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="portfolio.html">Portfolio</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="resources.html">Resources</a></li>
+						<li><a href="contact.html" class="active">Contact</a></li>
+					</ul>
+				</nav>
 			</div>
 		</header>
 		
 		<!-- PAGE TITLE
 		==================== -->
-		<!-- <div class="title">
-			<h2>&lt;&#47;CONTACT&gt;</h2>
-		</div> -->
+		<div class="title">
+			<h2>CONTACT</h2>
+		</div>
 		
 		<div class="mainContent">
-		<form action="thankyou.html">
-			<div class="sixteen columns">
-			<h3>Request a FREE Quote</h3>
-			<p>Fill out the information below for your free quote. *Required</p>
-			</div>
-			
-			<fieldset class="sixteen columns">
-				<div class="row">
-				<div class="five columns alpha" id="name0">
-				<label for="name"><span class="required">*</span>Name</label>
-				<input type="text" name="name" id="name" required="required" tabindex="1" />
+			<form action="thankyou.html">
+				<div class="sixteen columns">
+					<h3>Request a FREE Quote</h3>
+					<p>Fill out the information below for your free quote. *Required</p>
 				</div>
 				
-				<div class="five columns" id="email0">
-				<fieldset>
-					<label for="email"><span class="required">*</span>Email</label>
-					<input type="email" name="email" id="email" required="required" placeholder="youremail@gmail.com" />
+				<fieldset class="sixteen columns">
+					<div class="row">
+					<div class="five columns alpha" id="name0">
+					<label for="name"><span class="required">*</span>Name</label>
+					<input type="text" name="name" id="name" required="required" tabindex="1" />
+					</div>
+					
+					<div class="five columns" id="email0">
+					<fieldset>
+						<label for="email"><span class="required">*</span>Email</label>
+						<input type="email" name="email" id="email" required="required" placeholder="youremail@gmail.com" />
+					</fieldset>
+					</div>
+					
+					<div class="six columns omega" id="phone0">
+					<fieldset>
+						<label for="phone">Phone</label>
+						<input type="tel" name="phone" id="phone" placeholder="(XXX) XXX-XXXX" />
+					</fieldset>
+					</div>
+					</div> <!-- row -->
+					
+					<div class="row">
+					<div class="five columns alpha" id="website0">
+					<label for="website">Website</label>
+					<input type="url" name="website" id="website" placeholder="http://www.yourwebsite.com"/>
+					</div>
+					
+					<div class="five columns" id="budget0">
+					<label for="budget"><span class="required">*</span>Budget</label>
+					<input type="text" name="budget" id="budget" required="required" placeholder="$100 - $500" />
+					</div>
+					
+					<div class="six columns omega" id="deadline0">
+					<label for="deadline"><span class="required">*</span>Deadline</label>
+					<input type="date" name="deadline" id="deadline" required="required" />
+					</div>
+					</div> <!-- row -->
+									
+					<div class="row">
+					<div class="five columns alpha" id="industry0">
+					<label for="industry"><span class="required">*</span>Industry</label>
+					<select name="industry" id="industry" required="required">
+						<option value="">Please Select One</option>
+						<option value="Personal">Personal</option>
+						<option value="Business">Business</option>
+						<option value="Non-Profit">Non-Profit</option>
+						<option value="Other">Other</option>
+					</select>
+					</div>
+					
+					<div class="five columns" id="services0">
+					<fieldset id="services1">
+						<legend><span class="required">*</span>Services</legend>
+						
+						<label for="webDesign">
+						<input type="checkbox" name="webDesign" id="webDesign" value="Website Design / Redesign" />
+						<span>Web Design / Redesign</span></label>
+						
+						<label for="graphicDesign">
+						<input type="checkbox" name="graphicDesign" id="graphicDesign" value="Logo / Graphic Design" />
+						<span>Logo / Graphic Design</span></label>
+						
+						<label for="themes">
+						<input type="checkbox" name="themes" id="themes" value="Social Media Themes" />
+						<span>Social Media Themes</span></label>
+						
+						<label for="other">
+						<input type="checkbox" name="other" id="other" value="Other" />
+						<span>Other (Please Specify)</span></label>					
+					</fieldset>
+					</div>
+					
+					<div class="six columns omega" id="messages0">
+					<label for="message"><span class="required">*</span>Message</label>
+					<textarea name="message" id="message" required="required" placeholder="Message..."></textarea>
+					</div>
+					</div> <!-- row -->
+					
+					<div class="row">
+					<div class="sixteen columns omega">
+					<button type="submit"></button>
+					</div>
+					</div> <!-- row -->
 				</fieldset>
-				</div>
-				
-				<div class="six columns omega" id="phone0">
-				<fieldset>
-					<label for="phone">Phone</label>
-					<input type="tel" name="phone" id="phone" placeholder="(XXX) XXX-XXXX" />
-				</fieldset>
-				</div>
-				</div> <!-- row -->
-				
-				<div class="row">
-				<div class="five columns alpha" id="website0">
-				<label for="website">Website</label>
-				<input type="url" name="website" id="website" placeholder="http://www.yourwebsite.com"/>
-				</div>
-				
-				<div class="five columns" id="budget0">
-				<label for="budget"><span class="required">*</span>Budget</label>
-				<input type="text" name="budget" id="budget" required="required" placeholder="$100 - $500" />
-				</div>
-				
-				<div class="six columns omega" id="deadline0">
-				<label for="deadline"><span class="required">*</span>Deadline</label>
-				<input type="date" name="deadline" id="deadline" required="required" />
-				</div>
-				</div> <!-- row -->
-								
-				<div class="row">
-				<div class="five columns alpha" id="industry0">
-				<label for="industry"><span class="required">*</span>Industry</label>
-				<select name="industry" id="industry" required="required">
-					<option value="">Please Select One</option>
-					<option value="Personal">Personal</option>
-					<option value="Business">Business</option>
-					<option value="Non-Profit">Non-Profit</option>
-					<option value="Other">Other</option>
-				</select>
-				</div>
-				
-				<div class="five columns" id="services0">
-				<fieldset id="services1">
-					<legend><span class="required">*</span>Services</legend>
-					
-					<label for="webDesign">
-					<input type="checkbox" name="webDesign" id="webDesign" value="Website Design / Redesign" />
-					<span>Web Design / Redesign</span></label>
-					
-					<label for="graphicDesign">
-					<input type="checkbox" name="graphicDesign" id="graphicDesign" value="Logo / Graphic Design" />
-					<span>Logo / Graphic Design</span></label>
-					
-					<label for="themes">
-					<input type="checkbox" name="themes" id="themes" value="Social Media Themes" />
-					<span>Social Media Themes</span></label>
-					
-					<label for="other">
-					<input type="checkbox" name="other" id="other" value="Other" />
-					<span>Other (Please Specify)</span></label>					
-				</fieldset>
-				</div>
-				
-				<div class="six columns omega" id="messages0">
-				<label for="message"><span class="required">*</span>Message</label>
-				<textarea name="message" id="message" required="required" placeholder="Message..."></textarea>
-				</div>
-				</div> <!-- row -->
-				
-				<div class="row">
-				<div class="sixteen columns omega">
-				<button type="submit"></button>
-				</div>
-				</div> <!-- row -->
-			</fieldset>
-		</form>
+			</form>
 		</div> <!-- mainContent -->
-		
 	</div> <!-- container -->
 	
 	<!-- INFO BAR
@@ -201,38 +187,37 @@
 	<div class="infoBar">
 		<div class="container">
 		
-		<section>
-			<div class="four columns">
-			<article class="moduleItem" id="miContact">
-				<p>Get</p> <p>in</p> <p>Touch</p>
-			</article>
-			</div>
-			
-			<div class="four columns">
-			<article class="moduleItem">
-				<h3>Mailing Address</h3>
-				<p>877 Oak Reserve Lane</p>
-				<p>Winter Park, FL 32792</p>
-			</article>
-			</div>
-			
-			<div class="four columns">
-			<article class="moduleItem">
-				<h3>Contact Information</h3>
-				<p>P: <a href="tel:+13525527216">+1 (352) 552-7216</a></p>
-				<p>E: <a href="#">thatsme@artofliz.com</a></p>
-			</article>
-			</div>
-			
-			<div class="four columns">
-			<article class="moduleItem">
-				<h3>Connect</h3>
-				<p>Facebook: <a href="#">Lindsay Roberts</a></p>
-				<p>Skype: LRRoberts0122</p>
-			</article>
-			</div>
-		</section>
-		
+			<section>
+				<div class="four columns">
+					<article class="moduleItem" id="miContact">
+						<p>Get</p> <p>in</p> <p>Touch</p>
+					</article>
+				</div>
+				
+				<div class="four columns">
+					<article class="moduleItem">
+						<h3>Mailing Address</h3>
+						<p>877 Oak Reserve Lane</p>
+						<p>Winter Park, FL 32792</p>
+					</article>
+				</div>
+				
+				<div class="four columns">
+					<article class="moduleItem">
+						<h3>Contact Information</h3>
+						<p>P: <a href="tel:+13525527216">+1 (352) 552-7216</a></p>
+						<p>E: <a href="#">thatsme@artofliz.com</a></p>
+					</article>
+				</div>
+				
+				<div class="four columns">
+					<article class="moduleItem">
+						<h3>Connect</h3>
+						<p>Facebook: <a href="#">Lindsay Roberts</a></p>
+						<p>Skype: LRRoberts0122</p>
+					</article>
+				</div>
+			</section>
 		</div> <!--container -->
 	</div> <!-- infoBar -->
 	
@@ -240,15 +225,8 @@
 	==================== -->
 	<footer>
 		<p>&copy;2013 Lindsay Roberts <a href="#">http://www.artofliz.com</a> All Rights Reserved.</p>
-		<script type="text/javascript">
-setTimeout(function(){var a=document.createElement("script");
-var b=document.getElementsByTagName("script")[0];
-a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0013/9117.js?"+Math.floor(new Date().getTime()/3600000);
-a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
-</script>
 	</footer>
 	
-
 <!-- End Document
 ================================================== -->
 </body>

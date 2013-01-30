@@ -28,31 +28,16 @@
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 
-	<!-- CSS
+	<!-- JavaScript
   ================================================== -->	
-	<script type="text/javascript">
-
-		var _gaq = _gaq || [];
-		_gaq.push(['_setAccount', 'UA-37507947-2']);
-		_gaq.push(['_trackPageview']);
-
-		(function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-			})();
-
-	</script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
 </head>
 <body id="thankyou">
 
-
-
 	<!-- Primary Page Layout
 	================================================== -->
-
 	<div class="container">
+	
 		<!-- HEADER
 		==================== -->
 		<header>
@@ -63,52 +48,53 @@
 			</div>
 			
 			<div class="eleven columns">
-			<div id="callMe">
-				<a href="tel:+13525527216">Call Me</a>
-			</div>
-			<script type="text/javascript">
-				jQuery(document).ready(function($){
-
-					/* prepend menu icon */
-					$('#nav-wrap').prepend('<div id="menu-icon"></div>');
+				<div id="callMe">
+					<a href="tel:+13525527216">Call Me</a>
+				</div>
+				
+				<script type="text/javascript">
+					jQuery(document).ready(function($){
 	
-					/* toggle nav */
-					$("#menu-icon").on("click", function(){
-						$("#nav").slideToggle();
-						$(this).toggleClass("active");
+						/* prepend menu icon */
+						$('#nav-wrap').prepend('<div id="menu-icon"></div>');
+		
+						/* toggle nav */
+						$("#menu-icon").on("click", function(){
+							$("#nav").slideToggle();
+							$(this).toggleClass("active");
+						});
+	
 					});
-
-				});
-			</script>
-			<nav id="nav-wrap">
-				<ul id="nav">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="portfolio.html">Portfolio</a></li>
-					<li><a href="blog.html">Blog</a></li>
-					<li><a href="resources.html">Resources</a></li>
-					<li><a href="contact.html" class="active">Contact</a></li>
-				</ul>
-			</nav>
+				</script>
+				
+				<nav id="nav-wrap">
+					<ul id="nav">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="portfolio.html">Portfolio</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="resources.html">Resources</a></li>
+						<li><a href="contact.html" class="active">Contact</a></li>
+					</ul>
+				</nav>
 			</div>
 		</header>
 		
 		<!-- PAGE TITLE
 		==================== -->
-		<!-- <div class="title">
-			<h2>&lt;&#47;CONTACT&gt;</h2>
-		</div> -->
+		<div class="title">
+			<h2>CONTACT</h2>
+		</div>
 		
 		<div class="mainContent">
 			<section class="sixteen columns">
 				<div class="six columns alpha omega">
-				<h3>Thank You</h3>
-				<p><span>Your request has been sent.</span></p>
-				<p>In the mean time, please visit my <a href="portfolio.html">Portfolio</a> or my <a href="blog.html">Blog</a>. I will send you a response as soon as possible.</p>
+					<h3>Thank You</h3>
+					<p><span>Your request has been sent.</span></p>
+					<p>In the mean time, please visit my <a href="portfolio.html">Portfolio</a> or my <a href="blog.html">Blog</a>. I 						will send you a response as soon as possible.</p>
 				</div>
 			</section>
 		</div> <!-- mainContent -->
-		
 	</div> <!-- container -->
 	
 	<!-- INFO BAR
@@ -116,38 +102,37 @@
 	<div class="infoBar">
 		<div class="container">
 		
-		<section>
-			<div class="four columns">
-			<article class="moduleItem" id="miContact">
-				<p>Get</p> <p>in</p> <p>Touch</p>
-			</article>
-			</div>
-			
-			<div class="four columns">
-			<article class="moduleItem">
-				<h3>Mailing Address</h3>
-				<p>877 Oak Reserve Lane</p>
-				<p>Winter Park, FL 32792</p>
-			</article>
-			</div>
-			
-			<div class="four columns">
-			<article class="moduleItem">
-				<h3>Contact Information</h3>
-				<p>P: <a href="tel:+13525527216">+1 (352) 552-7216</a></p>
-				<p>E: <a href="#">thatsme@artofliz.com</a></p>
-			</article>
-			</div>
-			
-			<div class="four columns">
-			<article class="moduleItem">
-				<h3>Connect</h3>
-				<p>Facebook: <a href="#">Lindsay Roberts</a></p>
-				<p>Skype: LRRoberts0122</p>
-			</article>
-			</div>
-		</section>
-		
+			<section>
+				<div class="four columns">
+					<article class="moduleItem" id="miContact">
+						<p>Get</p> <p>in</p> <p>Touch</p>
+					</article>
+				</div>
+				
+				<div class="four columns">
+					<article class="moduleItem">
+						<h3>Mailing Address</h3>
+						<p>877 Oak Reserve Lane</p>
+						<p>Winter Park, FL 32792</p>
+					</article>
+				</div>
+				
+				<div class="four columns">
+					<article class="moduleItem">
+						<h3>Contact Information</h3>
+						<p>P: <a href="tel:+13525527216">+1 (352) 552-7216</a></p>
+						<p>E: <a href="#">thatsme@artofliz.com</a></p>
+					</article>
+				</div>
+				
+				<div class="four columns">
+					<article class="moduleItem">
+						<h3>Connect</h3>
+						<p>Facebook: <a href="#">Lindsay Roberts</a></p>
+						<p>Skype: LRRoberts0122</p>
+					</article>
+				</div>
+			</section>
 		</div> <!--container -->
 	</div> <!-- infoBar -->
 	
@@ -155,15 +140,8 @@
 	==================== -->
 	<footer>
 		<p>&copy;2013 Lindsay Roberts <a href="#">http://www.artofliz.com</a> All Rights Reserved.</p>
-		<script type="text/javascript">
-setTimeout(function(){var a=document.createElement("script");
-var b=document.getElementsByTagName("script")[0];
-a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0013/9117.js?"+Math.floor(new Date().getTime()/3600000);
-a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
-</script>
 	</footer>
 	
-
 <!-- End Document
 ================================================== -->
 </body>

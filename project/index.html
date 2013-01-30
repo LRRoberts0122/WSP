@@ -28,69 +28,53 @@
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 
-	<!-- CSS
-  ================================================== -->	
-	<script type="text/javascript">
-
-		var _gaq = _gaq || [];
-		_gaq.push(['_setAccount', 'UA-37507947-2']);
-		_gaq.push(['_trackPageview']);
-
-		(function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-			})();
-
-	</script>
+	<!-- JavaScript
+  ================================================== -->
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-
 </head>
 <body id="home">
 
-
-
 	<!-- Primary Page Layout
 	================================================== -->
-
 	<div class="container">
+	
 		<!-- HEADER
 		==================== -->
 		<header>
 			<div class="five columns">
-				<h1>
-					<a href="index.html">Art of Liz</a>
-				</h1>
+				<h1><a href="index.html">Art of Liz</a></h1>
 			</div>
 			
 			<div class="eleven columns">
-			<div id="callMe">
-				<a href="tel:+13525527216">Call Me</a>
-			</div>
-			<script type="text/javascript">
-				jQuery(document).ready(function($){
-
-					/* prepend menu icon */
-					$('#nav-wrap').prepend('<div id="menu-icon"></div>');
+				<div id="callMe">
+					<a href="tel:+13525527216">Call Me</a>
+				</div>
+				
+				<script type="text/javascript">
+					jQuery(document).ready(function($){
 	
-					/* toggle nav */
-					$("#menu-icon").on("click", function(){
-						$("#nav").slideToggle();
-						$(this).toggleClass("active");
+						/* prepend menu icon */
+						$('#nav-wrap').prepend('<div id="menu-icon"></div>');
+		
+						/* toggle nav */
+						$("#menu-icon").on("click", function(){
+							$("#nav").slideToggle();
+							$(this).toggleClass("active");
+						});
+	
 					});
-
-				});
-			</script>
-			<nav id="nav-wrap">
-				<ul id="nav">
-					<li><a href="index.html" class="active">Home</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="portfolio.html">Portfolio</a></li>
-					<li><a href="blog.html">Blog</a></li>
-					<li><a href="resources.html">Resources</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</nav>
+				</script>
+				
+				<nav id="nav-wrap">
+					<ul id="nav">
+						<li><a href="index.html" class="active">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="portfolio.html">Portfolio</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="resources.html">Resources</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
 			</div>
 		</header>
 		
@@ -103,11 +87,11 @@
 		<!-- CONTENT
 		==================== -->
 		<div class="mainContent">
-		<section class="sixteen columns" id="CTA">
-			<h3>Hi. I'm Liz.</h3>
-			<p>I'm developing <strong>mobile-friendly</strong> sites with style and creativity to make you <strong>stand out.</strong> Want something modern, minimal or clean? I've got you there, too. Get a <strong>free quote</strong> and increase your web presence today!</p>
-			<span id="CTAbutton"><a href="contact.html">Get Your Free Quote</a></span>
-		</section>
+			<section class="sixteen columns" id="CTA">
+				<h3>Hi. I'm Liz.</h3>
+				<p>I'm developing <strong>mobile-friendly</strong> sites with style and creativity to make you <strong>stand out.</strong> Want something modern, minimal or clean? I've got you there, too. Get a <strong>free quote</strong> and increase your web presence today!</p>
+				<span id="CTAbutton"><a href="contact.html">Get Your Free Quote</a></span>
+			</section>
 		</div> <!-- mainContent -->
 	</div><!-- container -->
 
@@ -117,85 +101,78 @@
 	<div class="infoBar">
 		<div class="container">
 		
-		<section id="infoBar1">
-			<a href="about.html">
-			<span class="moduleItem">
-				<h3>Services</h3>
-				<p>Web, Graphic, Design.</p>
-				<p>Anything to fit your needs.</p>
-			</span>
-			</a>
+			<section id="infoBar1">
+				<a href="about.html">
+					<div class="moduleItem">
+						<h3>Services</h3>
+						<p>Web, Graphic, Design.</p>
+						<p>Anything to fit your needs.</p>
+					</div>
+				</a>
+				
+				<a href="portfolio.html">
+					<div class="moduleItem">
+						<h3>My Work</h3>
+						<p>The latest and greatest.</p>
+						<p>Get to know me.</p>
+					</div>
+				</a>
+				
+				<a href="blog.html">
+					<div class="moduleItem">
+						<h3>Latest Blog Post</h3>
+						<p>Grades: History of Visual</p>
+						<p>Communications</p>
+					</div>
+				</a>
+				
+				<a href="resources.html">
+					<div class="moduleItem">
+						<h3>Recent Freebies</h3>
+						<p>Social Media Icon Set</p>
+						<p>Over 25 Vector Icons for free.</p>
+					</div>
+				</a>
+			</section> <!-- infoBar1 -->
 			
-			<a href="portfolio.html">
-			<span class="moduleItem">
-				<h3>My Work</h3>
-				<p>The latest and greatest.</p>
-				<p>Get to know me.</p>
-			</span>
-			</a>
-			
-			<a href="blog.html">
-			<span class="moduleItem">
-				<h3>Latest Blog Post</h3>
-				<p>Grades: History of Visual</p>
-				<p>Communications</p>
-			</span>
-			</a>
-			
-			<a href="resources.html">
-			<span class="moduleItem">
-				<h3>Recent Freebies</h3>
-				<p>Social Media Icon Set</p>
-				<p>Over 25 Vector Icons for free.</p>
-			</span>
-			</a>
-		</section>
-		
-		<section id="infoBar2">
-			<div class="four columns">
-			<a href="about.html" class="moduleItem">
-				<h3>Services</h3>
-				<p>Web, Graphic, Design.</p>
-				<p>Anything to fit your needs.</p>
-			</a>
-			</div>
-			
-			<div class="four columns">
-			<a href="portfolio.html" class="moduleItem">
-				<h3>My Work</h3>
-				<p>The latest and greatest.</p>
-				<p>Get to know me.</p>
-			</a>
-			</div>
-			
-			<div class="four columns">
-			<a href="blog.html" class="moduleItem">
-				<h3>Latest Blog Post</h3>
-				<p>Grades: History of Visual</p>
-				<p>Communications</p>
-			</a>
-			</div>
-			
-			<div class="four columns">
-			<a href="resources.html" class="moduleItem">
-				<h3>Recent Freebies</h3>
-				<p>Social Media Icon Set</p>
-				<p>Over 25 Vector Icons for free.</p>
-			</a>
-			</div>
-		</section>
-		
+			<section id="infoBar2">
+				<div class="four columns">
+					<a href="about.html" class="moduleItem">
+						<h3>Services</h3>
+						<p>Web, Graphic, Design.</p>
+						<p>Anything to fit your needs.</p>
+					</a>
+				</div>
+				
+				<div class="four columns">
+					<a href="portfolio.html" class="moduleItem">
+						<h3>My Work</h3>
+						<p>The latest and greatest.</p>
+						<p>Get to know me.</p>
+					</a>
+				</div>
+				
+				<div class="four columns">
+					<a href="blog.html" class="moduleItem">
+						<h3>Latest Blog Post</h3>
+						<p>Grades: History of Visual</p>
+						<p>Communications</p>
+					</a>
+				</div>
+				
+				<div class="four columns">
+					<a href="resources.html" class="moduleItem">
+						<h3>Recent Freebies</h3>
+						<p>Social Media Icon Set</p>
+						<p>Over 25 Vector Icons for free.</p>
+					</a>
+				</div>
+			</section> <!-- infoBar2 -->
 		</div> <!--container -->
 	</div> <!-- infoBar -->
 		
 	<footer class="sixteen columns">
 		<p>&copy;2013 Lindsay Roberts <a href="#">http://www.artofliz.com</a> All Rights Reserved.</p>
-		<script type="text/javascript">
-setTimeout(function(){var a=document.createElement("script");
-var b=document.getElementsByTagName("script")[0];
-a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0013/9117.js?"+Math.floor(new Date().getTime()/3600000);
-a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
-</script>
 	</footer>
 
 <!-- End Document

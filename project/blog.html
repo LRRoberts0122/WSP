@@ -23,41 +23,25 @@
 	<link rel="stylesheet" href="stylesheets/layout.css" type="text/css">
 	<link rel="stylesheet" href="stylesheets/style.css" type="text/css">
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600,700,900" type="text/css">
-	<link rel='stylesheet' href='stylesheets/msb.css'/>
-	<link rel='stylesheet' href='stylesheets/msb_style.css'/>
-	<script src='javascript/jquery-1.8.1.min.js'></script>
-	<script src='javascript/msb.min.js'></script>
-	<script src='javascript/swipe.min.js'></script>
+	<link rel='stylesheet' href="stylesheets/msb.css"/>
+	<link rel='stylesheet' href="stylesheets/msb_style.css"/>
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 
-	<!-- CSS
-  ================================================== -->	
-	<script type="text/javascript">
-
-		var _gaq = _gaq || [];
-		_gaq.push(['_setAccount', 'UA-37507947-2']);
-		_gaq.push(['_trackPageview']);
-
-		(function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-			})();
-
-	</script>
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	<!-- JavaScript
+  ================================================== -->
+  	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+  	<script src="javascript/jquery-1.8.1.min.js"></script>
+	<script src="javascript/msb.min.js"></script>	
 </head>
 <body id="blog">
 
-
-
 	<!-- Primary Page Layout
 	================================================== -->
-
 	<div class="container">
+
 		<!-- HEADER
 		==================== -->
 		<header>
@@ -68,33 +52,35 @@
 			</div>
 			
 			<div class="eleven columns">
-			<div id="callMe">
-				<a href="tel:+13525527216">Call Me</a>
-			</div>
-			<script type="text/javascript">
-				jQuery(document).ready(function($){
-
-					/* prepend menu icon */
-					$('#nav-wrap').prepend('<div id="menu-icon"></div>');
+				<div id="callMe">
+					<a href="tel:+13525527216">Call Me</a>
+				</div>
+				
+				<script type="text/javascript">
+					jQuery(document).ready(function($){
 	
-					/* toggle nav */
-					$("#menu-icon").on("click", function(){
-						$("#nav").slideToggle();
-						$(this).toggleClass("active");
+						/* prepend menu icon */
+						$('#nav-wrap').prepend('<div id="menu-icon"></div>');
+		
+						/* toggle nav */
+						$("#menu-icon").on("click", function(){
+							$("#nav").slideToggle();
+							$(this).toggleClass("active");
+						});
+	
 					});
-
-				});
-			</script>
-			<nav id="nav-wrap">
-				<ul id="nav">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="portfolio.html">Portfolio</a></li>
-					<li><a href="blog.html" class="active">Blog</a></li>
-					<li><a href="resources.html">Resources</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</nav>
+				</script>
+				
+				<nav id="nav-wrap">
+					<ul id="nav">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="portfolio.html">Portfolio</a></li>
+						<li><a href="blog.html" class="active">Blog</a></li>
+						<li><a href="resources.html">Resources</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
 			</div>
 		</header>
 		
@@ -103,130 +89,136 @@
 		<div class="title">
 			<h2>Blog</h2>
 		</div>
+
+	</div> <!-- container -->
 		
-		<div class="mainContent">
-		
-		<div class="sixteen columns">
-		</div>
-		
-		<section>
-		<div id='slider2' class='swipe'>
+	<section id="blogContent">
+		<div id='slider3' class='swipe'>
 			<ul>
-				<li>
-					<div class="four columns grades">
-					<article class="blogPost">
-						<h3>Grades: History of Vi...</h3>
-						<p><span class="date">December 20, 2012</span></p>
-						<img src="images/award.png" alt="An award ribbon" />
-						<p>Okay, so I'm pretty happy with the grades. I wish I'd studied for the Final, or else I could have gotten a 100%. I only missed two questions, but I was preoccupied with a death in the family, unfortunately. I still got an A+, so what does...</p>
-						<p><a href="#">Grades: History of Visual Communications</a></p>
-					</article>
+				<li class="start">
+					<div class="grades">
+						<article class="blogPost">
+							<h3>Grades: History of Visual Communications</h3>
+							<p><span class="date">December 20, 2012</span></p>
+							<img src="images/award.png" alt="An award ribbon" />
+							<div class="mobileBlog">
+								<p>Okay, so I'm pretty happy with the grades. I wish I'd studied for the Final, or else I could have 								gotten a 100%. I only missed two questions, but I was preoccupied with a death in the family, 										unfortunately. I still got an A+, so what does it matter? Regardless, this class was fun, and it offers 								the students a fresh air and really gives us a chance to get a creative boost going.</p>
+								<p>On another note, I'm a bit disappointed with my "grades" overall. Last month, I was supposed to be 								in Web Standards Project, however, I had to withdraw from the class because my video card fried. (Curse 								you Maya!) However, I got marked an "F" with a grade of 0.00% instead of "FA" (Failed Attendance) which 								would be understandable considering I wasn't even there; instead, they were supposed to give me a 									"W" (Withdrawn), and...</p>
+							</div> <!-- mobileBlog -->
+							<p>Keep Reading <a href="#">Grades: History of Visual Communications</a></p>
+						</article>
 					</div>
 				</li>
-				
-				<li>
-					<div class="four columns">
+				    
+				<li class="middle">
 					<article class="blogPost">
 						<h3>New Wallpaper</h3>
-						<p><span class="date">December 17, 2012</span></p>
-						<p>Hey everyone. It's officially break, and until Christmas I've been super bored. I ended up doing this Wallpaper. It's not very Christmasy, so I'm going to do another one, soon. I was actually recording this, but my computer ended up crashing half-way through, so I lost my...</p>
-						<p><a href="#">New Wallpaper</a></p>
+						<p><span class="date">December 20, 2012</span></p>
+						<div class="mobileBlog">
+							<p>Hey everyone. It's officially break, and until Christmas I've been super bored. I ended up doing this 							Wallpaper. It's not very Christmasy, so I'm going to do another one, soon. I was actually recording this, 							but my computer ended up crashing half-way through, so I lost my recording. Sorry. :( I'll be sure to 								record the Christmas one for you guys. :)</p>
+							<p>So here it is. I also created a new "Wallpaper" section at the bottom where you'll be able to download 							this and any other wallpapers I end up creating. Max resolution is 1920x1200. Enjoy.</p>
+						</div> <!-- mobileBlog -->
+						<p>Keep Reading <a href="#">New Wallpaper</a></p>
 					</article>
-					</div>
 				</li>
 				
-				<li>
-					<div class="four columns">
+				<li class="middle">
 					<article class="blogPost">
-						<h3>Month 11: History of...</h3>
-						<p><span class="date">December 13, 2012</span></p>
-						<p>For the final project, we were supposed to create a poster-esque something that was one of the art styles we'd learned about in class. The teacher allowed me to do something a bit more traditional, since we're rarely ever able to do...</p>
-						<p><a href="#">Month 11: History of Visual Communications</a></p>
+						<h3>Month 11: History of Visual Communications</h3>
+						<p><span class="date">December 20, 2012</span></p>
+						<div class="mobileBlog">
+							<p>For the final project, we were supposed to create a poster-esque something that was one of the art 								styles we'd learned about in class. The teacher allowed me to do something a bit more traditional, since 							we're rarely ever able to do something along those lines at Full Sail. Overall, I ended up going the Dada / 							Anti-Art route (though it ended up being more Auto-Destructive than anything).</p>
+							<p>I got a lot of compliments on the piece, and I'm quite happy with it. I feel like through destroying 							things, I'm able to express who I am, which actually makes sense considering how self-destructive I've been 							in the past. Perhaps that was the effect trying to contain all of it...</p>
+						</div> <!-- mobileBlog -->
+						<p>Keep Reading <a href="#">Month 11: History of Visual Communications</a></p>
 					</article>
-					</div>
 				</li>
-					
-				<li>
-					<div class="four columns">
+
+				<li class="middle">
 					<article class="blogPost">
-						<h3>Month 11: History of...</h3>
-						<p><span class="date">December 13, 2012</span></p>
-						<p>In this particular lab, I believe the goal was trying to get students to open up. What I really enjoy about this class is that you really do have creative freedom, for the most part. The exercise, I believe, helped to get students to understand...</p>
-						<p><a href="#">Month 11: History of Visual Communications</a></p>
+						<h3>Month 11: History of Visual Communications</h3>
+						<p><span class="date">December 20, 2012</span></p>
+						<div class="mobileBlog">
+							<p>In this particular lab, I believe the goal was trying to get students to open up. What I really enjoy 							about this class is that you really do have creative freedom, for the most part. The exercise, I believe, 							helped to get students to understand abstraction of art. The process started with students closing their 							eyes and scribbling on the paper with permanent marker. Each scribble was collected and then distributed 							again. I have no idea whose scribble I got. Instead of coloring inside the lines, I just experimented. 								Strangely enough, I got a lot of compliments on it. I think it's because instead of trying to color inside 							the lines, I just tried to do something fun...</p>
+						</div> <!-- mobileBlog -->
+						<p>Keep Reading <a href="#">Month 11: History of Visual Communications</a></p>
 					</article>
-					</div>
 				</li>
 			</ul>
-		</section>
-		
-		</div> <!-- mainContent -->
-		
-			</div><!-- container -->
+		</div> <!-- Slider -->
+				
+		<a href='#' id="prev" onclick='slider3.prev();return false;'>prev</a> 
+		<a href='#' id="next" onclick='slider3.next();return false;'>next</a>
+				
+		<script src='swipe.js'></script>
+		<script>
+			var slider3 = new Swipe(document.getElementById('slider3'));
+		</script>
+	</section>		
 	
 	<!-- INFO BAR
 	==================== -->
 	<div class="infoBar">
 		<div class="container">
 		
-		<section>
-			<div class="four columns">
-			<article class="moduleItem">
-				<h3>Categories</h3>
-				<div id="blogCats"></div>
-				<script>
-			msb.build({
-				id:'blogCats',
-				width:200,
-				height: 30,
-				scrollHeight: 100,
-				defaultValue:'View All',
-				items:[
-					{text:'View All'},
-					{text:'History of Visual Communications',value:'HVC'},
-					{text:'Designing for Web Standards',value:'DWS'},
-					{text:'Intellectual Property and Law',value:'IPL'},
-					{text:'Web Design Fundamentals',value:'WDF'},
-					{text:'Advanced Design Tools & Interfaces',value:'ADT'},
-					{text:'Web Interface & Usability',value:'WIU'},
-					{text:'Principles of Production Process',value:'PPP'},
-					{text:'Networks & Server Structures',value:'NSS'},
-					{text:'Art History',value:'ART'},
-					{text:'Advanced Computer Graphics',value:'ACG'},
-					{text:'Designing Computer Graphics',value:'DCG'}
-
-				],
-				scrollHeight: 75
-			});
-		</script>
-			</article>
-			</div>
-			
-			<div class="four columns">
-			<article class="moduleItem">
-				<h3>Personal Works</h3>
-				<p><a href="#">New Wallpaper</a></p>
-				<p><a href="#">Starry Night - Speed Art</a></p>
-			</article>
-			</div>
-			
-			<div class="four columns">
-			<article class="moduleItem">
-				<h3>Blog Archive</h3>
-				<p>Want to read more?</p>
-				<p><a href="#">Visit the Blog Archive</a></p>
-			</article>
-			</div>
-			
-			<div class="four columns">
-			<article class="moduleItem">
-				<h3>Need something else?</h3>
-				<form id="searchBox" method="get" action="#">
-					<input type="search" placeholder="Search the Blog..." />
-					<button type="submit"></button>
-				</form>
-			</article>
-			</div>
-		</section>
+			<section>
+				<div class="four columns">
+					<article class="moduleItem">
+						<h3>Categories</h3>
+						<div id="blogCats"></div>
+						<script>
+							msb.build({
+								id:'blogCats',
+								width: 200,
+								height: 30,
+								scrollHeight: 100,
+								defaultValue:'View All',
+								items:[
+									{text:'View All'},
+									{text:'History of Visual Communications',value:'HVC'},
+									{text:'Designing for Web Standards',value:'DWS'},
+									{text:'Intellectual Property and Law',value:'IPL'},
+									{text:'Web Design Fundamentals',value:'WDF'},
+									{text:'Advanced Design Tools & Interfaces',value:'ADT'},
+									{text:'Web Interface & Usability',value:'WIU'},
+									{text:'Principles of Production Process',value:'PPP'},
+									{text:'Networks & Server Structures',value:'NSS'},
+									{text:'Art History',value:'ART'},
+									{text:'Advanced Computer Graphics',value:'ACG'},
+									{text:'Designing Computer Graphics',value:'DCG'}
+					
+								],
+							});
+						</script>
+					</article>
+				</div>
+				
+				<div class="four columns">
+					<article class="moduleItem">
+						<h3>Personal Works</h3>
+						<p><a href="#">New Wallpaper</a></p>
+						<p><a href="#">Starry Night - Speed Art</a></p>
+					</article>
+				</div>
+				
+				<div class="four columns">
+					<article class="moduleItem">
+						<h3>Blog Archive</h3>
+						<p>Want to read more?</p>
+						<p><a href="#">Visit the Blog Archive</a></p>
+					</article>
+				</div>
+				
+				<div class="four columns">
+					<article class="moduleItem">
+						<h3>Need something else?</h3>
+						<form id="searchBox" method="get" action="#">
+							<input type="search" placeholder="Search the Blog..." />
+							<button type="submit"></button>
+						</form>
+					</article>
+				</div>
+			</section>
 		
 		</div> <!--container -->
 	</div> <!-- infoBar -->
@@ -235,12 +227,10 @@
 	==================== -->
 	<footer>
 		<p>&copy;2013 Lindsay Roberts <a href="#">http://www.artofliz.com</a> All Rights Reserved.</p>
-		<script type="text/javascript">
-setTimeout(function(){var a=document.createElement("script");
-var b=document.getElementsByTagName("script")[0];
-a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0013/9117.js?"+Math.floor(new Date().getTime()/3600000);
-a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
-</script>
+		<script src="javascript/swipe.js"></script>
+		<script>
+			var slider3 = new Swipe(document.getElementById('slider3'));
+		</script>
 	</footer>
 		
 <!-- End Document

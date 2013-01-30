@@ -28,31 +28,16 @@
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 
-	<!-- CSS
+	<!-- JavaScript
   ================================================== -->	
-	<script type="text/javascript">
-
-		var _gaq = _gaq || [];
-		_gaq.push(['_setAccount', 'UA-37507947-2']);
-		_gaq.push(['_trackPageview']);
-
-		(function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-			})();
-
-	</script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
 </head>
 <body id="resources">
 
-
-
 	<!-- Primary Page Layout
 	================================================== -->
-
 	<div class="container">
+	
 		<!-- HEADER
 		==================== -->
 		<header>
@@ -63,33 +48,35 @@
 			</div>
 			
 			<div class="eleven columns">
-			<div id="callMe">
-				<a href="tel:+13525527216">Call Me</a>
-			</div>
-			<script type="text/javascript">
-				jQuery(document).ready(function($){
-
-					/* prepend menu icon */
-					$('#nav-wrap').prepend('<div id="menu-icon"></div>');
+				<div id="callMe">
+					<a href="tel:+13525527216">Call Me</a>
+				</div>
+				
+				<script type="text/javascript">
+					jQuery(document).ready(function($){
 	
-					/* toggle nav */
-					$("#menu-icon").on("click", function(){
-						$("#nav").slideToggle();
-						$(this).toggleClass("active");
+						/* prepend menu icon */
+						$('#nav-wrap').prepend('<div id="menu-icon"></div>');
+		
+						/* toggle nav */
+						$("#menu-icon").on("click", function(){
+							$("#nav").slideToggle();
+							$(this).toggleClass("active");
+						});
+	
 					});
-
-				});
-			</script>
-			<nav id="nav-wrap">
-				<ul id="nav">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="portfolio.html">Portfolio</a></li>
-					<li><a href="blog.html">Blog</a></li>
-					<li><a href="resources.html" class="active">Resources</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</nav>
+				</script>
+				
+				<nav id="nav-wrap">
+					<ul id="nav">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="portfolio.html">Portfolio</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="resources.html" class="active">Resources</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
 			</div>
 		</header>
 		
@@ -100,177 +87,168 @@
 		</div>
 		
 		<div class="mainContent">
-		<section class="sixteen columns">
+			<section class="sixteen columns">
 			
-			<div class="five columns alpha">
-			<article>
-				<h3>Helpful Links for Designers</h3>
-				<p><a href="http://www.chillingeffects.org">Everything to Know About the DMCA</a></p>
-				<p><a href="http://www.rightsforartists.com">Know Your Online Rights as an Artist</a></p>			
-				<p><a href="http://www.creativecommons.org">Licensing for your Online Work</a></p>
-				<p><a href="http://build.phonegap.com">Adobe's Builder for Phone Gap</a></p>
-				<p><a href="http://debug.phonegap.com">Adobe's Debugger for Phone Gap</a></p>
-				<p><a href="http://www.github.com/ccoenraets/backbone-directory">Backbone Directory for Phone Gap</a></p>
-				<p><a href="http://www.960.gs">Web Measurements</a></p>
-				<p><a href="http://www.styletil.es">Style Tiles</a></p>
-			</article>
-			</div>
-			
-			<article>
-				<div class="four columns">
-				<h3>Reading</h3>
-				<p><a href="http://www.graphicartistsguild.org/handbook">Pricing &amp; Ethical Guidelines</a></p>
-				<p><a href="http://www.web-redesign.com">Web ReDesign 2.0</a></p>
-				<p><a href="http://www.designinginterfaces.com">Designing Interfaces</a></p>
-				<p><a href="http://www.thewebdesignersideabook.com">The Web Designer's Idea Book</a></p>
-				<p><a href="http://shop.oreilly.com/product/9780596527334.do">CSS The Definitive Guide</a></p>
-				<p><a href="http://www.sitepoint.com/books/html3">Build Your Own Website the Right Way Using HTML &amp; CSS</a></p>
-				<p><a href="http://www.zeldman.com/dwws">Designing with Web Standards</a></p>
+				<div class="five columns alpha">
+					<article>
+						<h3>Helpful Links for Designers</h3>
+						<p><a href="http://www.chillingeffects.org">Everything to Know About the DMCA</a></p>
+						<p><a href="http://www.rightsforartists.com">Know Your Online Rights as an Artist</a></p>			
+						<p><a href="http://www.creativecommons.org">Licensing for your Online Work</a></p>
+						<p><a href="http://build.phonegap.com">Adobe's Builder for Phone Gap</a></p>
+						<p><a href="http://debug.phonegap.com">Adobe's Debugger for Phone Gap</a></p>
+						<p><a href="http://www.github.com/ccoenraets/backbone-directory">Backbone Directory for Phone Gap</a></p>
+						<p><a href="http://www.960.gs">Web Measurements</a></p>
+						<p><a href="http://www.styletil.es">Style Tiles</a></p>
+					</article>
 				</div>
 				
-				<div class="seven columns omega">
-				<aside>
-					<img src="images/books/book_01.jpg" alt="Pricing & Ethical Guidelines" />
-					<img src="images/books/book_02.jpg" alt="Designing Interfaces" />
-					<img src="images/books/book_03.jpg" alt="Designing with Web Standards" />
-					<img src="images/books/book_04.jpg" alt="CSS The Definitive Guide" />
-					<img src="images/books/book_05.jpg" alt="Build Your Own Website the Right Way Using HTML & CSS" />
-					<img src="images/books/book_06.jpg" alt="Web ReDesign 2.0" />
-					<img src="images/books/book_07.jpg" alt="The Web Designer's Idea Book" />
-				</aside>
-				</div>
-			</article>
-		</section>
+				<article>
+					<div class="four columns">
+						<h3>Reading</h3>
+						<p><a href="http://www.graphicartistsguild.org/handbook">Pricing &amp; Ethical Guidelines</a></p>
+						<p><a href="http://www.web-redesign.com">Web ReDesign 2.0</a></p>
+						<p><a href="http://www.designinginterfaces.com">Designing Interfaces</a></p>
+						<p><a href="http://www.thewebdesignersideabook.com">The Web Designer's Idea Book</a></p>
+						<p><a href="http://shop.oreilly.com/product/9780596527334.do">CSS The Definitive Guide</a></p>
+						<p><a href="http://www.sitepoint.com/books/html3">Build Your Own Website the Right Way Using HTML &amp; CSS
+						</a></p>
+						<p><a href="http://www.zeldman.com/dwws">Designing with Web Standards</a></p>
+					</div>
+					
+					<div class="seven columns omega">
+						<aside>
+							<img src="images/books/book_01.jpg" alt="Pricing & Ethical Guidelines" />
+							<img src="images/books/book_02.jpg" alt="Designing Interfaces" />
+							<img src="images/books/book_03.jpg" alt="Designing with Web Standards" />
+							<img src="images/books/book_04.jpg" alt="CSS The Definitive Guide" />
+							<img src="images/books/book_05.jpg" alt="Build Your Own Website the Right Way Using HTML & CSS" />
+							<img src="images/books/book_06.jpg" alt="Web ReDesign 2.0" />
+							<img src="images/books/book_07.jpg" alt="The Web Designer's Idea Book" />
+						</aside>
+					</div>
+				</article>
+			</section>
 		</div> <!-- mainContent -->
-		
-			</div><!-- container -->
+	</div><!-- container -->
 	
 	<!-- INFO BAR
 	==================== -->
 	<div class="infoBar">
 		<div class="container">
 		
-		<section>
-		<script src="javascript/jquery-1.8.1.min.js"></script>
-		<script src="javascript/jquery.peelback.js"></script> 
+			<section>
+				<script src="javascript/jquery-1.8.1.min.js"></script>
+				<script src="javascript/jquery.peelback.js"></script> 
+			
+				<div class="four columns imageWrap">
+					<article class="moduleItem" id="wallpaper">
+						<div class="picText">
+							<h3>Paradise Wallpaper</h3>
+							<p>Free Wallpaper Download</p>
+							<p><a href="#">Download Paradise Wallpaper</a></p>
+						</div>
+					</article>
 		
-		
-			<div class="four columns imageWrap">
-			<article class="moduleItem" id="wallpaper">
-				<div class="picText">
-				<h3>Paradise Wallpaper</h3>
-				<p>Free Wallpaper Download</p>
-				<p><a href="#">Download Paradise Wallpaper</a></p>
+					<script>
+						$(function() {
+						  $('#wallpaper').peelback({
+						    adImage  : 'images/resources_1.jpg',
+						    peelImage  : 'images/corner.png',
+						    clickURL : '#',
+						    smallSize: 80,
+						    bigSize: 600,
+						    gaTrack  : true,
+						    gaLabel  : 'Wallpaper',
+						    autoAnimate: true
+						  });
+						});
+					</script>
 				</div>
-			</article>
-
-			<script>
-			$(function() {
-			  $('#wallpaper').peelback({
-			    adImage  : 'images/resources_1.jpg',
-			    peelImage  : 'images/corner.png',
-			    clickURL : '#',
-			    smallSize: 80,
-			    bigSize: 600,
-			    gaTrack  : true,
-			    gaLabel  : 'Wallpaper',
-			    autoAnimate: true
-			  });
-			});
-			</script>
-			</div>
-			
-			<div class="four columns">
-			<article class="moduleItem" id="social">
-				<div class="picText">
-				<h3>Social Media Vector Icons</h3>
-				<p>Over 20 Vector Icons for Free</p>
-				<p><a href="#">Download Icons</a></p>
+				
+				<div class="four columns">
+					<article class="moduleItem" id="social">
+						<div class="picText">
+							<h3>Social Media Vector Icons</h3>
+							<p>Over 20 Vector Icons for Free</p>
+							<p><a href="#">Download Icons</a></p>
+						</div>
+					</article>	
+					
+					<script>
+						$(function() {
+						  $('#social').peelback({
+						    adImage  : 'images/resources_2.jpg',
+						    peelImage  : 'images/corner.png',
+						    clickURL : '#',
+						    smallSize: 80,
+						    bigSize: 600,
+						    gaTrack  : true,
+						    gaLabel  : 'Social Media Icons',
+						    autoAnimate: true
+						  });
+						});
+					</script>		
 				</div>
-			</article>	
-			
-			<script>
-			$(function() {
-			  $('#social').peelback({
-			    adImage  : 'images/resources_2.jpg',
-			    peelImage  : 'images/corner.png',
-			    clickURL : '#',
-			    smallSize: 80,
-			    bigSize: 600,
-			    gaTrack  : true,
-			    gaLabel  : 'Social Media Icons',
-			    autoAnimate: true
-			  });
-			});
-			</script>		
-			</div>
-			
-			<div class="four columns">
-			<article class="moduleItem" id="badges">
-				<div class="picText">
-				<h3>Forum Badges</h3>
-				<p>Eight Badges for your Forums</p>
-				<p><a href="#">Download Badges</a></p>
+				
+				<div class="four columns">
+					<article class="moduleItem" id="badges">
+						<div class="picText">
+							<h3>Forum Badges</h3>
+							<p>Eight Badges for your Forums</p>
+							<p><a href="#">Download Badges</a></p>
+						</div>
+					</article>
+					
+					<script>
+						$(function() {
+						  $('#badges').peelback({
+						    adImage  : 'images/resources_3.jpg',
+						    peelImage  : 'images/corner.png',
+						    clickURL : '#',
+						    smallSize: 80,
+						    bigSize: 600,
+						    gaTrack  : true,
+						    gaLabel  : 'Vector Emblem',
+						    autoAnimate: true
+						  });
+						});
+					</script>
 				</div>
-			</article>
-			
-			<script>
-			$(function() {
-			  $('#badges').peelback({
-			    adImage  : 'images/resources_3.jpg',
-			    peelImage  : 'images/corner.png',
-			    clickURL : '#',
-			    smallSize: 80,
-			    bigSize: 600,
-			    gaTrack  : true,
-			    gaLabel  : 'Vector Emblem',
-			    autoAnimate: true
-			  });
-			});
-			</script>
-			</div>
-			
-			<div class="four columns">
-			<article class="moduleItem" id="emblem">
-				<div class="picText">
-				<h3>Vector Emblem</h3>
-				<p>Free Vector Emblem</p>
-				<p><a href="#">Download Emblem</a></p>
+				
+				<div class="four columns">
+					<article class="moduleItem" id="emblem">
+						<div class="picText">
+							<h3>Vector Emblem</h3>
+							<p>Free Vector Emblem</p>
+							<p><a href="#">Download Emblem</a></p>
+						</div>
+					</article>
+					
+					<script>
+						$(function() {
+						  $('#emblem').peelback({
+						    adImage  : 'images/resources_4.jpg',
+						    peelImage  : 'images/corner.png',
+						    clickURL : '#',
+						    smallSize: 80,
+						    bigSize: 600,
+						    gaTrack  : true,
+						    gaLabel  : 'Traditional Artwork',
+						    autoAnimate: true
+						  });
+						});
+					</script>
 				</div>
-			</article>
-			
-			<script>
-			$(function() {
-			  $('#emblem').peelback({
-			    adImage  : 'images/resources_4.jpg',
-			    peelImage  : 'images/corner.png',
-			    clickURL : '#',
-			    smallSize: 80,
-			    bigSize: 600,
-			    gaTrack  : true,
-			    gaLabel  : 'Traditional Artwork',
-			    autoAnimate: true
-			  });
-			});
-			</script>
-			</div>
-		</section>
+			</section>
 		</div> 
 	</div>
 
-	
 	<!-- FOOTER
 	==================== -->
 	<footer>
 		<p>&copy;2013 Lindsay Roberts <a href="#">http://www.artofliz.com</a> All Rights Reserved.</p>
-		<script type="text/javascript">
-setTimeout(function(){var a=document.createElement("script");
-var b=document.getElementsByTagName("script")[0];
-a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0013/9117.js?"+Math.floor(new Date().getTime()/3600000);
-a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
-</script>
 	</footer>
-
 
 <!-- End Document
 ================================================== -->
