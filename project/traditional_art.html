@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Art of Liz - Portfolio | Some of my best work</title>
+	<meta name="description" content="Hi. I'm Liz. I'm developing mobile-friendly sites with style and creativity to make you stand out. Want something modern, minimal or clean? I've got you there, too. Get a free quote and increase your web presence today!">
+	<meta name="author" content="Lindsay Roberts">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="stylesheets/base.css" type="text/css">
+	<link rel="stylesheet" href="stylesheets/skeleton.css" type="text/css">
+	<link rel="stylesheet" href="stylesheets/layout.css" type="text/css">
+	<link rel="stylesheet" href="stylesheets/style.css" type="text/css">
+	<link rel="stylesheet" href="stylesheets/photoswipe.css" type="text/css">
+	<link rel="stylesheet" href="stylesheets/styles.css" type="text/css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600,700,900" type="text/css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- JavaScript
+  ================================================== -->	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	<script type="text/javascript" src="javascript/klass.min.js"></script>
+	<script type="text/javascript" src="javascript/code.photoswipe-3.0.5.min.js"></script>
+	
+	<script type="text/javascript">
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-37507947-2']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+	</script>
+	
+	<script type="text/javascript">
+
+		(function(window, PhotoSwipe){
+			document.addEventListener('DOMContentLoaded', function(){
+			
+				var
+					options = {},
+					gallery1Instance = PhotoSwipe.attach( window.document.querySelectorAll('#Gallery1 a'), options ),
+					gallery2Instance = PhotoSwipe.attach( window.document.querySelectorAll('#Gallery2 a'), options ),
+					gallery3Instance = PhotoSwipe.attach( window.document.querySelectorAll('#Gallery3 a'), options );
+			
+			}, false);
+			
+			
+		}(window, window.Code.PhotoSwipe));
+		
+	</script>
+</head>
+<body id="traditional">
+
+
+
+	<!-- Primary Page Layout
+	================================================== -->
+
+	<div class="container">
+		<!-- HEADER
+		==================== -->
+		<header>
+			<div class="five columns">
+				<h1>
+					<a href="index.html">Art of Liz</a>
+				</h1>
+			</div>
+			
+			<div class="eleven columns">
+			<div id="callMe">
+				<a href="tel:+13525527216">Call Me</a>
+			</div>
+			<script type="text/javascript">
+				jQuery(document).ready(function($){
+
+					/* prepend menu icon */
+					$('#nav-wrap').prepend('<div id="menu-icon"></div>');
+	
+					/* toggle nav */
+					$("#menu-icon").on("click", function(){
+						$("#nav").slideToggle();
+						$(this).toggleClass("active");
+					});
+
+				});
+			</script>
+			<nav id="nav-wrap">
+				<ul id="nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="portfolio.html" class="active">Portfolio</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="resources.html">Resources</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+			</div>
+		</header>
+		
+		<!-- PAGE TITLE
+		==================== -->
+		<div class="title">
+			<h2>Portfolio</h2>
+		</div>
+		
+		<div class="mainContent">
+					
+		<section class="sixteen columns">
+			<ul id="Gallery1" class="gallery">
+				<h3>Traditional Artwork</h3>
+				<li><a href="images/gallery/art/abstract.jpg"><img src="images/gallery/art/thumb/abstract.jpg" alt="Pen and Sharpie on Paper" /></a></li>
+				<li><a href="images/gallery/art/scorpion.jpg"><img src="images/gallery/art/thumb/scorpion.jpg" alt="Liquid Chrome Scorpion Texture Study" /></a></li>
+				<li><a href="images/gallery/art/3d_render.jpg"><img src="images/gallery/art/thumb/3d_render.jpg" alt="3D Rendering Composition" /></a></li>
+				<li><a href="images/gallery/art/painting.jpg"><img src="images/gallery/art/thumb/painting.jpg" alt="A Portrait (Acryllic on Canvas)" /></a></li>
+				<li><a href="images/gallery/art/watercolor.jpg"><img src="images/gallery/art/thumb/watercolor.jpg" alt="Abstract Watercolor" /></a></li>
+			</ul>
+			<ul id="Gallery2" class="gallery">
+				<h3>Videos</h3>
+				<li class="video"><a href="#"><img src="images/gallery/art/thumb/animation.jpg" alt="2D Animation Reel" /></a></li>
+			</ul>
+
+		</section>
+		
+		</div> <!-- main Content -->
+		</div><!-- container -->
+	
+	<!-- INFO BAR
+	==================== -->
+	<div class="infoBar">
+		<div class="container">
+		
+		<section>
+		<script src="javascript/jquery-1.8.1.min.js"></script>
+		<script src="javascript/jquery.peelback.js"></script> 
+		
+		
+			<div class="four columns" class="imageWrap">
+			<article class="moduleItem" id="case">
+				<div class="picText">
+				<h3>Case Study</h3>
+				<p>The making of Art of Liz</p>
+				<p><a href="https://www.youtube.com/watch?v=54oYKP60cr4" target="_blank">www.artofliz.com</a></p>
+				</div>
+			</article>
+
+			<script>
+			$(function() {
+			  $('#case').peelback({
+			    adImage  : 'images/portfolio_1.jpg',
+			    peelImage  : 'images/corner.png',
+			    clickURL : 'https://www.youtube.com/watch?v=54oYKP60cr4',
+			    smallSize: 80,
+			    bigSize: 600,
+			    gaTrack  : true,
+			    gaLabel  : 'Case Study',
+			    autoAnimate: true
+			  });
+			});
+			</script>
+			</div>
+			
+			<div class="four columns">
+			<article class="moduleItem" id="web">
+				<div class="picText">
+				<h3>Web Design</h3>
+				<p>See some of my designs.</p>
+				<p><a href="web_design.html">View Comps</a></p>
+				</div>
+			</article>	
+			
+			<script>
+			$(function() {
+			  $('#web').peelback({
+			    adImage  : 'images/portfolio_2.jpg',
+			    peelImage  : 'images/corner.png',
+			    clickURL : 'web_design.html',
+			    smallSize: 80,
+			    bigSize: 600,
+			    gaTrack  : true,
+			    gaLabel  : 'Web Design',
+			    autoAnimate: true
+			  });
+			});
+			</script>		
+			</div>
+			
+			<div class="four columns">
+			<article class="moduleItem" id="graphic">
+				<div class="picText">
+				<h3>Graphic Design</h3>
+				<p>Wireframe Revisions</p>
+				<p><a href="graphic_design.html">View Graphics</a></p>
+				</div>
+			</article>
+			
+			<script>
+			$(function() {
+			  $('#graphic').peelback({
+			    adImage  : 'images/portfolio_3.jpg',
+			    peelImage  : 'images/corner.png',
+			    clickURL : 'graphic_design.html',
+			    smallSize: 80,
+			    bigSize: 600,
+			    gaTrack  : true,
+			    gaLabel  : 'Graphic Design',
+			    autoAnimate: true
+			  });
+			});
+			</script>
+			</div>
+			
+			<div class="four columns">
+			<article class="moduleItem" id="art">
+				<div class="picText">
+				<h3>Traditional Artwork</h3>
+				<p>See some of my art.</p>
+				<p><a href="traditional_art.html">View Artwork</a></p>
+				</div>
+			</article>
+			
+			<script>
+			$(function() {
+			  $('#art').peelback({
+			    adImage  : 'images/portfolio_4.jpg',
+			    peelImage  : 'images/corner.png',
+			    clickURL : 'traditional_art.html',
+			    smallSize: 80,
+			    bigSize: 600,
+			    gaTrack  : true,
+			    gaLabel  : 'Traditional Artwork',
+			    autoAnimate: true
+			  });
+			});
+			</script>
+			</div>
+		</section>
+		
+		</div> <!--container -->
+	</div> <!-- infoBar -->
+	
+	<!-- FOOTER
+	==================== -->
+	<footer>
+		<p>&copy;2013 Lindsay Roberts <a href="#">http://www.artofliz.com</a> All Rights Reserved.</p>
+		<script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName("script")[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0013/9117.js?"+Math.floor(new Date().getTime()/3600000);
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+	</footer>
+
+
+<!-- End Document
+================================================== -->
+</body>
+</html>

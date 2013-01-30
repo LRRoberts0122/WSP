@@ -20,7 +20,7 @@ body {
 	background: url('../images/about.png') no-repeat 475px 10px, url('../images/bg_pattern.jpg');
 }
 
-#portfolio {
+#portfolio, #webDesign, #graphicDesign, #traditional {
 	background: url('../images/portfolio.png') no-repeat 475px 10px, url('../images/bg_pattern.jpg');
 }
 
@@ -32,8 +32,12 @@ body {
 	background: url('../images/resources.png') no-repeat 475px 10px, url('../images/bg_pattern.jpg');
 }
 
-#contact {
+#contact, #thankyou {
 	background: url('../images/contact.png') no-repeat 475px 10px, url('../images/bg_pattern.jpg');
+}
+
+#callMe {
+	display: none;
 }
 
 .container { 
@@ -187,6 +191,7 @@ nav ul li a.active:after {
 	background-color: #000;
 	width: 100%;
 	min-height: 186px;
+	overflow: hidden;
 }
 
 .moduleItem h3 { 
@@ -204,6 +209,10 @@ nav ul li a.active:after {
 .moduleItem,
 #about .infoBar h3 {
 	padding-top: 22px;
+}
+
+#webDesign .moduleItem, #graphicDesign .moduleItem, #traditional .moduleItem, #caseStudy .moduleItem {
+	padding-top: 0px;
 }
 
 footer { 
@@ -266,6 +275,28 @@ footer p {
 	background-position: bottom left;
 }
 
+#home #infoBar1 a {
+	text-decoration: none;
+	min-height: 162px;
+	padding-top: 22px;
+	width: 220px;
+	padding-left: 10px;
+	float: left;
+}
+
+#home #infoBar1 a:hover {
+	background: #222;
+}
+
+#home #infoBar2 {
+	display: none;
+	padding-left: 0;
+}
+
+#home #infoBar2 a {
+	text-decoration: none;
+}
+
 
 /* ABOUT PAGE
 ================================================== */
@@ -315,20 +346,78 @@ footer p {
 	background-position: right 100px;
 }
 
-#portfolio .moduleItem {
+#portfolio .moduleItem, #resources .moduleItem {
 	margin: 0;
 	padding: 0;
 }
 
-#case h3, #web h3, #graphic h3, #art h3 {
+#case h3, #web h3, #graphic h3, #art h3, #wallpaper h3, #social h3, #badges h3, #emblem h3 {
 	padding-top: 22px;
 }
 
-#portfolio .infoBar section { 
+#portfolio .infoBar section, #resources .infoBar section { 
 	min-height: 186px;
 }
 
-#portfolio #case, #portfolio #web, #portfolio #graphic, #portfolio #art {display: block; width: 215px; height: 186px; overflow: hidden; position: relative;}
+#case, #web, #graphic, #art, #wallpaper, #social, #badges, #emblem {
+	display: block; 
+	width: 215px; 
+	height: 186px; 
+	overflow: hidden; 
+	position: relative;
+}
+
+.gallery { list-style: none; padding: 0; margin: 0; }
+.gallery:after { clear: both; content: "."; display: block; height: 0; visibility: hidden; }
+.gallery li { float: left; }
+.gallery li a { display: block; margin: 5px 10px 5px 0; width: 75px; height: auto; opacity: .8; background: #000;  }
+.gallery li a:hover { -webkit-transform: scale(1.108); opacity: 1; }
+.gallery li a:hover {opacity: 1; height: auto; 
+-webkit-transform: scale(1.108);
+-webkit-transition: -webkit-transform 0.3s ease-in-out, opacity 0.3s, height 0.3s; 
+-o-transform: scale(1.108);
+-o-transition: -o-transform 0.3s ease-in-out, opacity 0.3s, height 0.3s; 
+-moz-transform: scale(1.108);
+-moz-transition: -moz-transform 0.3s ease-in-out, opacity 0.3s, height 0.3s; 
+transform: scale(1.108);
+transition: width 0.3s ease-in-out, opacity 0.3s, height 0.3s; 
+}
+.gallery li img { display: block; width: 100%; height: auto;}
+
+#webDesign #Gallery1 {
+	margin-bottom: 35px;
+}
+
+#webDesign #Gallery2 {
+	float: left;
+}
+
+#webDesign #Gallery3 {
+	float: right;
+}
+
+#graphicDesign .gallery li a {width: 105px;}
+
+#graphicDesign .video a img {height: 105px; width: auto;}
+
+#graphicDesign #Gallery1 {float: left; margin-bottom: 35px;}
+
+#graphicDesign #Gallery2 {float: left;}
+
+#traditional .gallery li a {width: 130px;}
+
+#traditional .video a img {height: 130px; width: auto;}
+
+#traditional #Gallery1 {float: left;}
+
+#traditional #Gallery2 {float: left;}
+
+/* For inline examples only */
+#PhotoSwipeTarget { width: 100%; height: 200px; }
+
+#Indicators { text-align: center; margin-top: 20px; }
+#Indicators span { display: inline-block; height: 10px; width: 10px; margin: 0 10px 0 0; padding: 0; -webkit-border-radius:5px; -moz-border-radius:5px; -o-border-radius:5px; border-radius:5px; background: #c5c5c5; overflow:hidden; }
+#Indicators span.current{ background: #EEBF02; }
 
 
 /* BLOG PAGE
@@ -444,37 +533,6 @@ footer p {
 
 /* RESOURCES PAGE
 ================================================== */
-/* #resources .mainContent { 
-	margin-top: 4px; 
-	margin-bottom: 79px; 
-	}*/
-
-#resources .infoBar { 
-	padding: 0; 
-	margin: 0; 
-	position: relative; 
-	}
-
-#resources .infoBar img { 
-	position: absolute; 
-	top: 0; 
-	}
-
-/* #resources #wallpaper { 
-	background: url('../images/portfolio_01.jpg') no-repeat center left; 
-	}
-
-#resources #icons { 
-	background: url('../images/portfolio_02.jpg') no-repeat center left; 
-	}
-
-#resources #badges { 
-	background: url('../images/portfolio_03.jpg') no-repeat center left; 
-	}
-
-#resources #emblem { 
-	background: url('../images/portfolio_04.jpg') no-repeat center left; 
-	} */
 
 
 /* CONTACT PAGE
@@ -640,6 +698,18 @@ select {
 
 	/* Smaller than standard 960 (devices and browsers) */
 	@media only screen and (max-width: 959px) {
+	
+		#home #infoBar1 {
+			display: none;
+		}
+		
+		#home #infoBar2 {
+			display: inherit;
+		}
+		
+		#resources .moduleItem {
+			width: 180px;
+		}
 		
 		#contact label, 
 		#contact legend { 
@@ -686,15 +756,32 @@ select {
 			margin-right: 70px; 
 		}
 		
+		#webDesign .gallery li a {width: 135px;}
+		
+		#graphicDesign .video a img {height: 135px; width: auto;}
+		
+		#graphicDesign .gallery li a {width: 135px;}
+
+		#graphicDesign .video a img {height: 135px; width: auto;}
+				
+		#traditional .gallery li a {width: 135px;}
+		
+		#traditional .video a img {height: 135px; width: auto;}
+		
 		.blogPost img {
 			display: none;
+		}
+		
+		#thankyou .mainContent section {
+			min-height: 200px;
+			margin: 195px 0 0 105px;
 		}
 		
 	}
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
 	@media only screen and (min-width: 768px) and (max-width: 959px) {
-		#home, #about, #portfolio, #blog, #resources, #contact {
+		#home, #about, #portfolio, #webDesign, #graphicDesign, #traditional, #blog, #resources, #contact, #thankyou {
 			background: url('../images/mobile_bg.jpg') repeat-x, #dfdfd5;
 		}
 		
@@ -749,6 +836,7 @@ select {
 			color: #deded3;
 		}
 		
+		
 		#CTAbutton a { 
 			display: block; 
 			/*margin: 0 auto;*/
@@ -766,12 +854,24 @@ select {
 			background-position: 0 0; 
 		}
 		
+		#home #infoBar1 {
+			display: none;
+		}
+		
+		#home #infoBar2 {
+			display: inherit;
+		}
+		
+		#home .infoBar a h3 {
+			padding-top: 22px;
+		}
+		
 		#about .infoBar img {
 			width: 80%;
 			height: 80%;
 		}
 		
-		#portfolio .infoBar section { 
+		#portfolio .infoBar section, #resources .infoBar section { 
 			background: #000;
 		}
 
@@ -781,11 +881,41 @@ select {
 			background-size: 55%;
 		}
 		
+		.peelback {
+			display: none;
+		}
+
+		#webDesign #Gallery1, .gallery {
+			margin-bottom: 15px;
+		}
+		
+		#webDesign #Gallery2 {
+			float: none;
+		}
+		
+		#webDesign #Gallery3 {
+			float: none;
+		}
+		
+		
+		#webDesign .gallery li a {width: 135px;}
+		
+		#graphicDesign .video a img {height: 135px; width: auto;}
+		
+		#graphicDesign .gallery li a {width: 135px;}
+
+		#graphicDesign .video a img {height: 135px; width: auto;}
+				
+		#traditional .gallery li a {width: 135px;}
+		
+		#traditional .video a img {height: 135px; width: auto;}
+		
+				
 	}
 
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {
-		#home, #about, #portfolio, #blog, #resources, #contact {
+		#home, #about, #portfolio, #webDesign, #graphicDesign, #traditional, #blog, #resources, #contact, #thankyou {
 			background: url('../images/mobile_bg.jpg') repeat-x, #dfdfd5;
 		}
 		
@@ -825,6 +955,26 @@ select {
 		
 		.mainContent h3 {
 			margin-top: 20px;
+		}
+		
+		#callMe {
+			background: url('../images/call.jpg');
+			color: rgba(0,0,0,0);
+			display: block;
+			width: 84px;
+			height: 38px;
+			cursor: pointer;
+			float: right;
+			position: absolute;
+			top: 0;
+			right: 45px;
+		}
+		
+		#callMe a {
+			opacity: 0;
+			display: block;
+			width: 84px;
+			height: 38px;
 		}
 		
 		#menu-icon {
@@ -886,6 +1036,18 @@ select {
 			margin-top: 130px;
 		}
 		
+		#home #infoBar1 {
+			display: none;
+		}
+		
+		#home #infoBar2 {
+			display: inherit;
+		}
+		
+		#home #infoBar2 h3 {
+			margin-top: 22px;
+		}
+		
 		#myPicture { 
 			margin-bottom: 0px; 
 		}
@@ -909,7 +1071,7 @@ select {
 			margin-top: 205px;
 		}
 		
-		#portfolio .infoBar {
+		#portfolio .infoBar, #webDesign .infoBar, #graphicDesign .infoBar, #traditional .infoBar, #resources .infoBar {
 			margin-top: 10px;
 		}
 		
@@ -917,37 +1079,89 @@ select {
 			margin-bottom: 15px;	
 		}
 		
-		#portfolio .infoBar section {
+		#portfolio .infoBar section, #webDesign .infoBar section, #graphicDesign .infoBar section, #traditional .infoBar section, #resources .infoBar section {
 			background: #000;
 		}
 		
-		#portfolio .moduleItem {
+		#portfolio .moduleItem, #webDesign .moduleItem, #graphicDesign .moduleItem, #traditional .moduleItem {
 			padding-left: 100px;
+		}
+		
+		#resources .moduleItem {
+			padding-left: 135px;
 		}
 		
 		#case { 
 			background: 
-			url('../images/portfolio_1.jpg') no-repeat bottom left;
+			url('../images/portfolio_01.jpg') no-repeat bottom left;
 			background-size: 27%;
 		}
 		
 		#web { 
 			background: 
-			url('../images/portfolio_2.jpg') no-repeat bottom left;
+			url('../images/portfolio_02.jpg') no-repeat bottom left;
 			background-size: 27%;
 		}
 		
 		#graphic { 
 			background: 
-			url('../images/portfolio_3.jpg') no-repeat bottom left;
+			url('../images/portfolio_03.jpg') no-repeat bottom left;
 			background-size: 27%;
 		}
 		
 		#art { 
 			background: 
-			url('../images/portfolio_4.jpg') no-repeat bottom left;
+			url('../images/portfolio_04.jpg') no-repeat bottom left;
 			background-size: 27%;
 		}
+		
+		#wallpaper { 
+			background: 
+			url('../images/resources_01.jpg') no-repeat left 30px;
+			background-size: 37%;
+		}
+		
+		#social { 
+			background: 
+			url('../images/resources_02.jpg') no-repeat left 30px;
+			background-size: 37%;
+		}
+		
+		#badges { 
+			background: 
+			url('../images/resources_03.jpg') no-repeat left 30px;
+			background-size: 37%;
+		}
+		
+		#emblem { 
+			background: 
+			url('../images/resources_04.jpg') no-repeat left 30px;
+			background-size: 37%;
+		}
+		
+		.peelback {
+			display: none;
+		}
+		
+		#case, #web, #graphic, #art, #wallpaper, #social, #badges, #emblem {
+			display: block; 
+			width: auto; 
+			height: auto; 
+			overflow: hidden; 
+			position: relative;
+		}
+		
+		#webDesign .gallery li a {width: 135px;}
+		
+		#graphicDesign .video a img {height: 135px; width: auto;}
+		
+		#graphicDesign .gallery li a {width: 135px;}
+
+		#graphicDesign .video a img {height: 135px; width: auto;}
+				
+		#traditional .gallery li a {width: 135px;}
+		
+		#traditional .video a img {height: 135px; width: auto;}
 		
 		#contact label, 
 		#contact legend { 
@@ -1025,6 +1239,18 @@ select {
 			color: #007caf; 
 			margin-right: 8px; 
 		}
+	
+		#thankyou .mainContent section {
+			min-height: 300px;
+			margin: 0 auto;
+			background: url('../images/avatar.png') no-repeat;
+			background-size: 100%;
+		}
+		
+		#thankyou .mainContent section div {
+			padding-top: 125px;
+			width: 240px;
+		}
 		
 	}
 
@@ -1044,7 +1270,19 @@ select {
 			margin-top: 295px;
 		}
 		
+		#webDesign .gallery li a {width: 135px;}
 		
+		#graphicDesign .video a img {height: 135px; width: auto;}
+		
+		#graphicDesign .gallery li a {width: 135px;}
+
+		#graphicDesign .video a img {height: 135px; width: auto;}
+				
+		#traditional .gallery li a {width: 135px;}
+		
+		#traditional .video a img {height: 135px; width: auto;}
+		
+		#resources aside {margin-top: 25px;}
 	}
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
@@ -1137,4 +1375,34 @@ select {
 			float: right; 
 			margin-right: 100px; 
 		}
+		
+		#webDesign .gallery li a {width: 135px;}
+		
+		#graphicDesign .video a img {height: 135px; width: auto;}
+		
+		#graphicDesign .gallery li a {width: 135px;}
+
+		#graphicDesign .video a img {height: 135px; width: auto;}
+				
+		#traditional .gallery li a {width: 135px;}
+		
+		#traditional .video a img {height: 135px; width: auto;}
+		
+		#resources aside {margin-top: 25px;}
+		
+		#thankyou .mainContent section div {
+			padding-top: 105px;
+		}
+		
+		#thankyou .mainContent section div p span {
+			display: block;
+			width: 185px;
+			margin-bottom: 55px;
+		}
+		
+		#thankyou .mainContent section div:last-child {
+			display: block;
+			width: 300px;
+		}
+		
 	}

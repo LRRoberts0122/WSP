@@ -63,6 +63,9 @@
 			</div>
 			
 			<div class="eleven columns">
+			<div id="callMe">
+				<a href="tel:+13525527216">Call Me</a>
+			</div>
 			<script type="text/javascript">
 				jQuery(document).ready(function($){
 
@@ -148,41 +151,113 @@
 		<div class="container">
 		
 		<section>
-			<div class="four columns">
+		<script src="javascript/jquery-1.8.1.min.js"></script>
+		<script src="javascript/jquery.peelback.js"></script> 
+		
+		
+			<div class="four columns imageWrap">
 			<article class="moduleItem" id="wallpaper">
+				<div class="picText">
 				<h3>Paradise Wallpaper</h3>
 				<p>Free Wallpaper Download</p>
 				<p><a href="#">Download Paradise Wallpaper</a></p>
+				</div>
 			</article>
+
+			<script>
+			$(function() {
+			  $('#wallpaper').peelback({
+			    adImage  : 'images/resources_1.jpg',
+			    peelImage  : 'images/corner.png',
+			    clickURL : '#',
+			    smallSize: 80,
+			    bigSize: 600,
+			    gaTrack  : true,
+			    gaLabel  : 'Wallpaper',
+			    autoAnimate: true
+			  });
+			});
+			</script>
 			</div>
 			
 			<div class="four columns">
-			<article class="moduleItem" id="icons">
+			<article class="moduleItem" id="social">
+				<div class="picText">
 				<h3>Social Media Vector Icons</h3>
 				<p>Over 20 Vector Icons for Free</p>
 				<p><a href="#">Download Icons</a></p>
-			</article>
+				</div>
+			</article>	
+			
+			<script>
+			$(function() {
+			  $('#social').peelback({
+			    adImage  : 'images/resources_2.jpg',
+			    peelImage  : 'images/corner.png',
+			    clickURL : '#',
+			    smallSize: 80,
+			    bigSize: 600,
+			    gaTrack  : true,
+			    gaLabel  : 'Social Media Icons',
+			    autoAnimate: true
+			  });
+			});
+			</script>		
 			</div>
 			
 			<div class="four columns">
 			<article class="moduleItem" id="badges">
+				<div class="picText">
 				<h3>Forum Badges</h3>
 				<p>Eight Badges for your Forums</p>
-				<p><a href="#">Download Forum Badges</a></p>
+				<p><a href="#">Download Badges</a></p>
+				</div>
 			</article>
+			
+			<script>
+			$(function() {
+			  $('#badges').peelback({
+			    adImage  : 'images/resources_3.jpg',
+			    peelImage  : 'images/corner.png',
+			    clickURL : '#',
+			    smallSize: 80,
+			    bigSize: 600,
+			    gaTrack  : true,
+			    gaLabel  : 'Vector Emblem',
+			    autoAnimate: true
+			  });
+			});
+			</script>
 			</div>
 			
 			<div class="four columns">
 			<article class="moduleItem" id="emblem">
+				<div class="picText">
 				<h3>Vector Emblem</h3>
 				<p>Free Vector Emblem</p>
 				<p><a href="#">Download Emblem</a></p>
+				</div>
 			</article>
+			
+			<script>
+			$(function() {
+			  $('#emblem').peelback({
+			    adImage  : 'images/resources_4.jpg',
+			    peelImage  : 'images/corner.png',
+			    clickURL : '#',
+			    smallSize: 80,
+			    bigSize: 600,
+			    gaTrack  : true,
+			    gaLabel  : 'Traditional Artwork',
+			    autoAnimate: true
+			  });
+			});
+			</script>
 			</div>
 		</section>
-		
-		</div> <!--container -->
-	</div> <!-- infoBar -->
+		</div> 
+	</div>
+
 	
 	<!-- FOOTER
 	==================== -->
